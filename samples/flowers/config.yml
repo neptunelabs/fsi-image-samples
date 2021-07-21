@@ -1,0 +1,15 @@
+title: Flowers
+image: logo.png
+description: Simple HTML based Demo with many layers
+facts:
+  - Layer groups
+  - Object movement
+  - Object rotation
+priority: 1
+jsfiddle:
+  mapping:
+    html: "index.html"
+    js: "flowers.js"
+    css: "flowers.css"
+  resources:
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/layers/js/fsilayers.js"
