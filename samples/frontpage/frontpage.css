@@ -1,0 +1,87 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  color: #fff;
+}
+.site-header a {
+  color: #fff;
+  padding: 10px;
+  transition: color .15s ease-in-out;
+  text-decoration: none;
+}
+.site-header a:hover {
+  color: #fff;
+  background-color: #91B595;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btn-outline-secondary {
+  color: #000!important;
+  border-color: #000!important;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff!important;
+  border-color: #fff!important;
+  background-color: #91B595!important;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.header {
+  position: absolute;
+ background-image: url("//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-lauuoxHBK5k-unsplash.jpg&width=1920&rect=0.10835,0.39402,0.89165,0.31658");
+  background-repeat: no-repeat;
+  background-position:right top;
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
