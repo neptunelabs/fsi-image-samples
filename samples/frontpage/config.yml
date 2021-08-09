@@ -1,4 +1,11 @@
 title: Website Frontpage
 image: logo.png
-description: Shows how a frontpage could look with dynamic imaging used.
+description: Shows how a frontpage could look with dynamic imaging and static assets from FSI Server.
 priority: 2
+jsfiddle:
+  mapping:
+    html: "index.html"
+    css: "frontpage.css"
+    js: "frontpage.js"
+  resources:
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"

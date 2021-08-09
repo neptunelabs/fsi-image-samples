@@ -65,13 +65,9 @@
   font-size: 0.8rem;
 }
 
-.header {
-  position: absolute;
- background-image: url("//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-lauuoxHBK5k-unsplash.jpg&width=1950&rect=0.10835,0.39402,0.89165,0.31658");
-  background-repeat: no-repeat;
-  background-position:right top;
-  background-size:100% 100%;
-  margin-left: 0px !important;
+.pdp-text {
+  z-index: 1020;
+  position: sticky;
 }
 
 .flex-equal > * {

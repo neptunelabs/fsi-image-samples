@@ -1,4 +1,11 @@
 title: Product Detail Page
 image: logo.png
 description: Shows how a product detail page could look with dynamic imaging used.
-priority: 4
+priority: 3
+jsfiddle:
+  mapping:
+    html: "index.html"
+    css: "pdp.css"
+    js: "pdp.js"
+  resources:
+    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
