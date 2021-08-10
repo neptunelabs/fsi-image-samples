@@ -12,8 +12,6 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-  <!-- Custom styles for this template -->
-  <link href="product.css" rel="stylesheet">
 </head>
 <body>
 
@@ -33,8 +31,8 @@
 <main>
   <div class="bg-light d-md-flex flex-md-equal w-100 overflow-hidden">
     <div class="row row-cols-1 row-cols-md-2 g-3 px-5 py-3">
-      <div class="col-7">
-        <img src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=800" height="800" alt="">
+      <div class="col-7" >
+        <img id="image" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=940" width="940" alt="">
       </div>
     </div>
     <div class="col-5 sticky-top mx-auto">
@@ -59,14 +57,14 @@
         </p>
         <div class="row pb-3">
           <div class="col-4">
-            <img src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=150&rect=0.15187,0,0.84813,1" width="150" alt="">
+            <img class="thumbnail" onclick="changeImage('0')" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=150&rect=0.15187,0,0.84813,1" width="150" alt="">
           </div>
-          <div class="col-4">
-            <img src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-jSbBnR22cXc-unsplash.jpg&width=150&rect=0,0.29634,1,0.66709" width="150" alt="">
+          <div class="col-4" >
+            <img class="thumbnail" onclick="changeImage('1')" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-jSbBnR22cXc-unsplash.jpg&width=150&rect=0,0.29634,1,0.66709" width="150" alt="">
 
           </div>
-          <div class="col-4">
-            <img src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CZysNmnvEJg-unsplash.jpg&width=150&rect=0.25612,0,0.74388,0.99622" width="150" alt="">
+          <div class="col-4" >
+            <img class="thumbnail" onclick="changeImage('2')" src="//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CZysNmnvEJg-unsplash.jpg&width=150&rect=0.25612,0,0.74388,0.99622" width="150" alt="">
           </div>
         </div>
         <div class="btn-group py-3">
