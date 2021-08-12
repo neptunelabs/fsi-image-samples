@@ -2,9 +2,10 @@
   max-width: 960px;
 }
 
-/*
- * Custom translucent site header
- */
+.thumbnail
+{
+  cursor: pointer;
+}
 
 .site-header {
   background-color: rgba(0, 0, 0, .85);
