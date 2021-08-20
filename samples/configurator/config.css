@@ -92,30 +92,53 @@
 }
 
 .icon-orange {
-  color: #fd6a4b;
-  font-size: 3rem;
+  background: #fd6a4b;
+  font-size: 1rem;
+  color:#ffffff;
 }
 
+.icon-salmon {
+  background: #e3867e;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+
 .icon-blue {
-  color: #3fadfc;
-  font-size: 3rem;
+  background: #3fadfc;
+  font-size: 1rem;
+  color:#ffffff;
 }
 
 .icon-icy {
-  color: #60e9cb;
-  font-size: 3rem;
+  background: #60e9cb;
+  font-size: 1rem;
+  color:#ffffff;
 }
 
 .icon-ligreen {
-  color: #6ef55c;
-  font-size: 3rem;
+  background: #6ef55c;
+  font-size: 1rem;
+  color:#ffffff;
 }
 
 .icon-purple {
-  color: #8f92f3;
-  font-size: 3rem;
+  background: #8f92f3;
+  font-size: 1rem;
+  color:#ffffff;
 }
 
+.icon-lirose {
+  background: #dfc4c2;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-pastel-pink {
+  background: #e1b7af;
+  font-size: 1rem;
+  color:#ffffff;
+}
 
 
 
