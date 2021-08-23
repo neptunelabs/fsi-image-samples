@@ -97,7 +97,7 @@
 }
 
 .icon-salmon {
-  background: #e3867e;
+  background: #e3867e!important;
   font-size: 1rem;
   color:#ffffff;
 }
@@ -138,6 +138,3 @@
   font-size: 1rem;
   color:#ffffff;
 }
-
-
-
