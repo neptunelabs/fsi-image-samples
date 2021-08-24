@@ -1,0 +1,144 @@
+.container {
+  max-width: 960px;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  color: #fff;
+}
+.site-header a {
+  color: #fff;
+  padding: 10px;
+  transition: color .15s ease-in-out;
+  text-decoration: none;
+}
+.site-header a:hover {
+  color: #fff;
+  background-color: #91B595;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btn-outline-secondary {
+  color: #000!important;
+  border-color: #000!important;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff!important;
+  border-color: #fff!important;
+  background-color: #91B595!important;
+}
+
+.credit{
+  font-size: x-small;
+  color: #666666;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.product-heading {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.product-text {
+  font-size: 0.8rem;
+}
+
+.pdp-text {
+  z-index: 1020;
+  position: sticky;
+}
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  color: #212529!important;
+  background-color: #f9fafb;
+}
+
+.thumb-icon
+{
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+.thumbnail {
+  padding-right: 1rem;
+}
+
+.icon-orange {
+  background: #fd6a4b;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-orange-round {
+  color: #fd6a4b;
+  font-size: 3rem;
+}
+.icon-salmon {
+  background: #e3867e!important;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+
+.icon-blue {
+  background: #3fadfc;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-icy {
+  background: #60e9cb;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-ligreen {
+  background: #6ef55c;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-purple {
+  background: #8f92f3;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-lirose {
+  background: #dfc4c2;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-pastel-pink {
+  background: #e1b7af;
+  font-size: 1rem;
+  color:#ffffff;
+}
