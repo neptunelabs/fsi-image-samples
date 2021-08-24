@@ -221,4 +221,9 @@
   font-size: 3rem;
 }
 
-
+.color-badge {
+  font-size: .65em!important;
+  top: -80%!important;
+  left: 70%;
+  background-color: #666666;
+}

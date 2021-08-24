@@ -1,3 +1,21 @@
+const inputEl = document.querySelectorAll('i[data-value]');
+inputEl.addEventListener('click', (event) => {
+  this.changeColor(event.target.dataset.leatherValue)
+})
+
+function changeColor() {
+  const leather = document.querySelectorAll('i[data-leather-value]');
+  const suede = document.querySelectorAll('i[data-suede-value]');
+  const highlight = document.querySelectorAll('i[data-highlight-value]');
+  console.log('leather selected: ', leather.dataset.leatherValue);
+  console.log('suede selected: ', suede.dataset.suedeValue);
+  console.log('highlight selected: ', highlight.dataset.highlightValue);
+  img = imgbase + 'select(New,Alpha,1),colorize(' + leather + '),select(New,Alpha,2),colorize(' + suede + '),select(New,Alpha,3),colorize(' + highlight + ')';
+  console.log('image is:', img)
+  curImage.src = img;
+}
+
+
 function handleChange(evt) {
   let img;
   let curImage = document.getElementById('image');
