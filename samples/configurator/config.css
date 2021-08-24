@@ -95,17 +95,11 @@
   font-size: 1rem;
   color:#ffffff;
 }
-
-.icon-orange-round {
-  color: #fd6a4b;
-  font-size: 3rem;
-}
 .icon-salmon {
   background: #e3867e!important;
   font-size: 1rem;
   color:#ffffff;
 }
-
 
 .icon-blue {
   background: #3fadfc;
@@ -142,3 +136,89 @@
   font-size: 1rem;
   color:#ffffff;
 }
+
+.icon-lavender {
+  background: #b9caf9;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-cream {
+  background: #fbd9c1;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-berry {
+  background: #fc769f;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-sun {
+  background: #f8e973;
+  font-size: 1rem;
+  color:#ffffff;
+}
+
+.icon-salmon-round {
+  color: #e3867e;
+  font-size: 3rem;
+}
+
+.icon-orange-round {
+  color: #fd6a4b;
+  font-size: 3rem;
+}
+
+.icon-blue-round {
+  color: #3fadfc;
+  font-size: 3rem;
+}
+
+.icon-icy-round {
+  color: #60e9cb;
+  font-size: 3rem;
+}
+
+.icon-ligreen-round {
+  color: #6ef55c;
+  font-size: 3rem;
+}
+
+.icon-purple-round {
+  color: #8f92f3;
+  font-size: 3rem;
+}
+
+.icon-lirose-round {
+  color: #dfc4c2;
+  font-size: 3rem;
+}
+
+.icon-pastel-pink-round {
+  color: #e1b7af;
+  font-size: 3rem;
+}
+
+.icon-lavender-round {
+  color: #b9caf9;
+  font-size: 3rem;
+}
+
+.icon-cream-round {
+  color: #fbd9c1;
+  font-size: 3rem;
+}
+
+.icon-berry-round {
+  color: #fc769f;
+  font-size: 3rem;
+}
+
+.icon-sun-round {
+  color: #f8e973;
+  font-size: 3rem;
+}
+
+
