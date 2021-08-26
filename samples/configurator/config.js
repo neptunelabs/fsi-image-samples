@@ -39,10 +39,6 @@ function changeColor(el) {
       break
   }
 
-  console.log('leather selected: ', this.leathervalue);
-  console.log('suede selected: ', this.suedevalue);
-  console.log('hightlight selected: ', this.highlightvalue);
   img = imgbase + 'select(New,Alpha,1),colorize(' + this.leathervalue + '),select(New,Alpha,2),colorize(' + this.suedevalue + '),select(New,Alpha,3),colorize(' + this.highlightvalue + ')';
-  console.log('image is:', img)
   curImage.src = img;
 }
