@@ -29,6 +29,7 @@ function changeColor(el) {
       highlightvalue = el.dataset.value;
       break
   }
+
   console.log('leather selected: ', leathervalue);
   console.log('suede selected: ', suedevalue);
   console.log('hightlight selected: ', highlightvalue);
