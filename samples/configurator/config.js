@@ -1,38 +1,38 @@
-window.onload = function() {
-  var icon = document.querySelectorAll('[data-role]');
-  for (i = 0; i < icon.length; i++) {
-    icon[i].addEventListener('click',changeColor, false);
-  }
+document.addEventListener('DOMContentLoaded', (event) => {
+  initClick()
+})
+
+function initClick() {
+  document.querySelectorAll('[data-role]').forEach(function (el) {
+    el.addEventListener('click', () => {
+      changeColor(el)
+    })
+  })
 }
 
 
-function changeColor() {
-  alert('changeColor');
-  const leather = document.querySelectorAll("[data-role='changeLeather']");
-  const suede = document.querySelectorAll("[data-role='changeSuede']");
-  const highlight = document.querySelectorAll("[data-role='changeHighlight']");
-  let leathervalue = leather.dataset.value;
-
-  console.log('leather selected: ', leather.dataset.value);
-  console.log('suede selected: ', suede);
-  console.log('highlight selected: ', highlight);
-  img = imgbase + 'select(New,Alpha,1),colorize(' + leathervalue + '),select(New,Alpha,2),colorize(' + suede + '),select(New,Alpha,3),colorize(' + highlight + ')';
-  console.log('image is:', img)
-  curImage.src = img;
-}
-
-
-function handleChange(evt) {
+function changeColor(el) {
   let img;
   let curImage = document.getElementById('image');
   var imgbase = "//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe-by-artem-bondarchuk.tif&width=940&effects=";
-  var leather = document.getElementById("inputLeather").value;
-  var suede =  document.getElementById("inputSuede").value;
-  var highlight =  document.getElementById("inputHighlight").value;
-  console.log('leather selected: ', leather);
-  console.log('suede selected: ', suede);
-  console.log('highlight selected: ', highlight);
-  img = imgbase + 'select(New,Alpha,1),colorize(' + leather + '),select(New,Alpha,2),colorize(' + suede + '),select(New,Alpha,3),colorize(' + highlight + ')';
+  let leathervalue = "4,66,10";
+  let suedevalue = "0,24,0";
+  let highlightvalue = "10,50,0";
+  switch (el.dataset.role) {
+    case 'leatherChange':
+      leathervalue = el.dataset.value;
+      break
+    case 'suedeChange':
+      suedevalue = el.dataset.value;
+      break
+    case 'highlightChange':
+      highlightvalue = el.dataset.value;
+      break
+  }
+  console.log('leather selected: ', leathervalue);
+  console.log('suede selected: ', suedevalue);
+  console.log('hightlight selected: ', highlightvalue);
+  img = imgbase + 'select(New,Alpha,1),colorize(' + leathervalue + '),select(New,Alpha,2),colorize(' + suedevalue + '),select(New,Alpha,3),colorize(' + highlightvalue + ')';
   console.log('image is:', img)
   curImage.src = img;
 }
