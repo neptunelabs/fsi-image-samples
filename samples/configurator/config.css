@@ -75,6 +75,12 @@
   }
 }
 
+.tile {
+  background-color: #d9e4dc87!important;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .accordion-button:not(.collapsed) {
   color: #212529!important;
   background-color: #f9fafb;
