@@ -45,27 +45,6 @@
   padding-right: 10px;
 }
 
-.product-heading {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.product-price {
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-align: left;
-}
-
-
-.product-text {
-  font-size: 0.8rem;
-}
-
-.pdp-text {
-  z-index: 1020;
-  position: sticky;
-}
-
 .flex-equal > * {
   flex: 1;
 }
@@ -73,12 +52,6 @@
   .flex-md-equal > * {
     flex: 1;
   }
-}
-
-.tile {
-  background-color: #d9e4dc87!important;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .accordion-button:not(.collapsed) {
@@ -94,77 +67,6 @@
 
 .thumbnail {
   padding-right: 1rem;
-}
-
-.icon-orange {
-  background: #fd6a4b;
-  font-size: 1rem;
-  color:#ffffff;
-}
-.icon-salmon {
-  background: #e3867e!important;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-blue {
-  background: #3fadfc;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-icy {
-  background: #60e9cb;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-ligreen {
-  background: #6ef55c;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-purple {
-  background: #8f92f3;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-lirose {
-  background: #dfc4c2;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-pastel-pink {
-  background: #e1b7af;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-lavender {
-  background: #b9caf9;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-cream {
-  background: #fbd9c1;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-berry {
-  background: #fc769f;
-  font-size: 1rem;
-  color:#ffffff;
-}
-
-.icon-sun {
-  background: #f8e973;
-  font-size: 1rem;
-  color:#ffffff;
 }
 
 .icon-salmon-round {
@@ -227,9 +129,29 @@
   font-size: 3rem;
 }
 
+.icon-coffee-round {
+  color: #96736a;
+  font-size: 3rem;
+}
+
+.icon-rose-round {
+  color: #ecd1c5;
+  font-size: 3rem;
+}
+.icon-ivory-round {
+  color: #dac6c2;
+  font-size: 3rem;
+}
+.icon-sand-round {
+  color: #b78c8a;
+  font-size: 3rem;
+}
+
 .color-badge {
   font-size: .65em!important;
   top: -80%!important;
   left: 70%;
   background-color: #666666;
 }
+
+
