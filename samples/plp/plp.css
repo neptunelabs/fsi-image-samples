@@ -1,0 +1,128 @@
+.container {
+  max-width: 960px;
+}
+
+.thumbnail
+{
+  cursor: pointer;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.header {
+  position: absolute;
+  background-image: url("//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-5kYCPVqQ8nw-unsplash.jpg&width=1950&rect=0.04073,0.59647,0.93483,0.08424");
+  background-repeat: no-repeat;
+  background-position:right top;
+  background-size:100% 100%;
+  margin-left: 0px !important;
+}
+
+.title {
+  color: #fff;
+  font-weight: 300;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff!important;
+  background-color: #91B595!important;
+  border-color: #91B595!important;
+}
+.page-item:not(:first-child) .page-link {
+  margin-left: -1px;
+}
+.page-link:hover {
+  z-index: 2;
+  color: #91B595!important;
+  background-color: #e9ecef;
+  border-color: #91B595!important;
+}
+a:hover {
+  color: #91B595!important;
+}
+
+.page-link {
+  padding: .375rem .75rem;
+}
+.page-link {
+  position: relative;
+  display: block;
+  color: #212529!important;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #212529!important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.footer {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  color: #fff;
+}
+.site-header a {
+  color: #fff;
+  padding: 10px;
+  transition: color .15s ease-in-out;
+  text-decoration: none;
+}
+.site-header a:hover {
+  color: #fff;
+  background-color: #91B595;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btn-outline-secondary {
+  color: #000!important;
+  border-color: #000!important;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff!important;
+  border-color: #fff!important;
+  background-color: #91B595!important;
+}
+
+.credit{
+  font-size: x-small;
+  color: #666666;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.product-heading {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.product-text {
+  font-size: 0.8rem;
+}
+
+.pdp-text {
+  z-index: 1020;
+  position: sticky;
+}
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}

@@ -1,12 +1,12 @@
-title: Website Frontpage
+title: Product Listing Page
 image: logo.png
-description: Shows how a frontpage could look with dynamic imaging and static assets from FSI Server.
-priority: 1
+description: Shows how a product listing page could look with dynamic imaging used.
+priority: 2
 jsfiddle:
   mapping:
     html: "index.html"
-    css: "frontpage.css"
-    js: "frontpage.js"
+    css: "category.css"
+    js: "category.js"
   resources:
     - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
     - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
