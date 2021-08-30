@@ -13,15 +13,6 @@
   backdrop-filter: saturate(180%) blur(20px);
 }
 
-.header {
-  position: absolute;
-  background-image: url("//fsi-site-origin.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-5kYCPVqQ8nw-unsplash.jpg&width=1950&rect=0.04073,0.59647,0.93483,0.08424");
-  background-repeat: no-repeat;
-  background-position:right top;
-  background-size:100% 100%;
-  margin-left: 0px !important;
-}
-
 .title {
   color: #fff;
   font-weight: 300;

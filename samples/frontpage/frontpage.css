@@ -2,22 +2,12 @@
   max-width: 960px;
 }
 
-/*
- * Custom translucent site header
- */
-
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
 
-.footer {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  color: #fff;
-}
 .site-header a {
   color: #fff;
   padding: 10px;
@@ -31,22 +21,49 @@
   text-decoration: none;
 }
 
-.btn-outline-secondary {
-  color: #000!important;
+.header {
+  position: absolute;
+  background-image: url("//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-lauuoxHBK5k-unsplash.jpg&width=1950&rect=0.10835,0.39402,0.89165,0.31658");
+  background-repeat: no-repeat;
+  background-position:right top;
+  background-size: cover;
+  margin-left: 0px !important;
+}
+
+@media screen and (max-width:640px) {
+  .header {
+    background-position:center;
+    background-size: cover;
+    height:50%!important;
+  }
+  .sale-badge {
+    height: 150px;
+  }
+
+  .btn-outline-custom {
+    color: #fff!important;;
+    border-color: #fff!important;
+  }
+
+  .lead {
+    color: #fff!important;
+  }
+
+  .vid-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.btn-outline-custom {
+  color: #000;
   border-color: #000!important;
 }
 
-.btn-outline-secondary:hover {
+.btn-outline-custom:hover {
   color: #fff!important;
   border-color: #fff!important;
   background-color: #91B595!important;
-}
-
-.credit{
-  font-size: x-small;
-  color: #666666;
-  text-align: right;
-  padding-right: 10px;
 }
 
 .product-heading {
@@ -65,13 +82,18 @@
   font-size: 0.8rem;
 }
 
-.header {
-  position: absolute;
- background-image: url("//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-lauuoxHBK5k-unsplash.jpg&width=1950&rect=0.10835,0.39402,0.89165,0.31658");
-  background-repeat: no-repeat;
-  background-position:right top;
-  background-size:100% 100%;
-  margin-left: 0px !important;
+.footer {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  color: #fff;
+}
+
+.credit{
+  font-size: x-small;
+  color: #666666;
+  text-align: right;
+  padding-right: 10px;
 }
 
 .flex-equal > * {
