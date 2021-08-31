@@ -27,7 +27,7 @@ function initClick() {
 function changeColor(el) {
   let img;
   let curImage = document.getElementById('image');
-  var imgbase = "//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe-by-artem-bondarchuk.tif&width=940&effects=";
+  var imgbase = "//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=";
 
   switch (el.dataset.role) {
     case 'leatherChange':
