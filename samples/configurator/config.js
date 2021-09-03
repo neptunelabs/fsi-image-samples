@@ -4,11 +4,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 class Configurator {
   constructor () {
-    this.leathervalue = "4,66,10";
-    this.suedevalue = "0,24,0";
-    this.highlightvalue = "10,50,0";
-    this.highlighttwovalue = "10,24,0";
-    this.leathertwovalue = "11,17,0";
     initClick()
   }
 }
