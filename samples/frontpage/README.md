@@ -18,6 +18,8 @@ It's important to use the correct source connector for your images:
 
 Depending on the type of the selected source connector, you can upload different types of files. There are several possibilities to upload images into the interface.
 
+![Config Image](readme-front.png)
+
 - Choose the Upload tab, click the "Choose files" button to add files to upload to the list. The files will be uploaded to the current folder.
 - Drag & Drop files to the file view or the tree view
 
@@ -26,8 +28,11 @@ Depending on the type of the selected source connector, you can upload different
 While having an image or folder selected, you can see all possible publishing ways for the specific item by visting the Publish To Web tab.
 For this example, select the preset *Simple Image*:
 
+![Config Image](readme-front-1.png)
+
 Simple Image publishes the image with a simple <img< tag. Requires a single high resolution image. You can set the output dimensions and format (auto automatically chooses the best format for the browser used, or you can set WEBP, JPEG, PNG or GIF) as well as add various effects to the static image.
 
+![Config Image](readme-front-2.png)
 
 The *Source Code* section enables you to control the look of your image or viewer by setting the dimensions and format, as well as adding effects or crop options to it.
 In this area you also can see the source code for your selected publishing option which you can edit and copy to publish the images.
@@ -37,114 +42,52 @@ You can then add the images to your site via image tag:
 ```html
  <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-boFO5uIUKUU-unsplash.jpg&width=283" alt="" width="283">
 ```
+You can change the width and/or height directly in the image tag, the image will scale accordingly.
 
-# Changing the colors
+# Adding overlays (Sale icon)
 
-The **config.js** script embedded deals with the changing of the colors:
+It's also possible to add overlays to your images, such as the sales icon which is placed
+over some of the images in the *Featured Prodcuts* section.
 
+![Config Image](readme-front-3.png)
+
+You can do this easily in the *Publish To Web* tab. While having selected *Simple Image* as preset,
+choose the effects icon in the Source Code toolbar.
+
+![Config Image](readme-front-4.png)
+
+In the modal, add the *Overlays* effect to the image via drag & drop.
+Choose the image path where your overlay is stored on FSI Server. You can then change the opacity, position and offset and
+see the changes directly in the preview window.
+Select OK as soon as you are finished.
+
+![Config Image](readme-front-5.png)
+
+The URL created will look like this:
+
+
+[https://fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=283&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)](https://fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=283&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0))
+
+
+# Adding static assets
+
+You can add static assets such as SVG or videos via FSI Server as well.
+
+For this, assets need to be uploaded to a corresponding *static* source connector.
+Afterwards, you can see the URL of the asset in the *Metadata* tab.
+Just add this URL to your site:
+
+SVG:
 ```html
-<script src="config.js"></script>
+<img src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/logo-furniture-gre.svg" height="24">
 ```
 
-First, we set an EventListener as soon as the DOM is loaded:
-
-```javascript
-document.addEventListener('DOMContentLoaded', (event) => {
-  new Configurator()
-})
+Video:
+```html
+<video class="vid-fluid" width="1215" autoplay loop>
+  <source src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/pexels-max-vakhtbovych-7749089.mp4" type="video/mp4">
+</video>
 ```
-
-Then we set the class with *initClick* and define the function:
-
-```javascript
-class Configurator {
-  constructor () {
-    initClick()
-  }
-}
-
-function initClick() {
-  const self = this
-  document.querySelectorAll('[data-role]').forEach(function (el) {
-    el.addEventListener('click', () => {
-      self.changeColor(el)
-    })
-  })
-}
-```
-The function *initClick* uses a query selector, which selects the data-role and adds
-an EventListener to it. If clicked, the function *changeColor* is called:
-
-```javascript
-function changeColor(el) {
-  let img;
-  let curImage = document.getElementById('image');
-  var imgbase = "//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=";
-```
-
-We get the current image with the corresponding ID and set an imagebase.
-
-```javascript
-switch (el.dataset.role) {
-  case 'leatherChange':
-    this.leathervalue = el.dataset.value;
-    break
-  case 'leatherTwoChange':
-    this.leathertwovalue = el.dataset.value;
-    break
-  case 'suedeChange':
-    this.suedevalue = el.dataset.value;
-    break
-  case 'highlightChange':
-    this.highlightvalue = el.dataset.value;
-    break
-  case 'highlightTwoChange':
-    this.highlighttwovalue = el.dataset.value;
-    break
-}
-```
-
-The switch defines what happens if a particular data-role is clicked. This way, the five
-different values are set.
-
-```javascript
-  img = imgbase + 'select(New,Alpha,1),colorize(' + this.leathervalue + '),select(New,Alpha,2),colorize(' + this.suedevalue + '),select(New,Alpha,3),colorize(' + this.highlightvalue + '),select(New,Alpha,4),colorize(' + this.leathertwovalue + '),select(New,Alpha,5),colorize(' + this.highlighttwovalue + ')';
-curImage.src = img;
-}
-```
-
-The image is now build from adding the imagebase, the effect itself (select(New,Alpha,1),colorize(color)) and the accompanying values retrieved from the switch.
-Then the current image is replaced with the newly built image.
-
-# Defining the color values
-
-You can use the FSI Server Interface to determine the color values you need:
-Select the image with the Alpha Channels, and got to the Publish tab and choose *Simple Image* from the templates
-on the right.
-
-![Config Image](readme-config-1.png)
-
-In the *Your Source Code* section, choose the icon for image effects (see above).
-
-In the modal, go to the *Select* effect and add it via drag and drop to the left.
-Choose as Type of Range *Alpha Channel* and select the Alpha Channel you want to use:
-
-![Config Image 2](readme-config-2.png)
-
-Now, add the Colorize Effect to your effect list.
-By changing the Hue, Saturation and Lightness you can instantly see the changes in the
-preview window:
-
-![Config Image 3](readme-config-3.png)
-
-You can add as many selections/colorizations on top as you like.
-The only thing you need to keep in mind is the correct order:
-first add the Alpha Channel via Select, than add Colorize.
-
-At the end, your image URL could look something like this:
-
-[https://fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=select(New,Alpha,1),colorize(4,66,10),select(New,Alpha,2),colorize(0,24,0),select(New,Alpha,3),colorize(10,50,0),select(New,Alpha,4),colorize(11,17,0),select(New,Alpha,5),colorize(10,24,0)](https://fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=select(New,Alpha,1),colorize(4,66,10),select(New,Alpha,2),colorize(0,24,0),select(New,Alpha,3),colorize(10,50,0),select(New,Alpha,4),colorize(11,17,0),select(New,Alpha,5),colorize(10,24,0))
-
 
 ## Testing with examples from  your own server
 
