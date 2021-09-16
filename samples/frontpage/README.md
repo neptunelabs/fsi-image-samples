@@ -30,7 +30,7 @@ For this example, select the preset *Simple Image*:
 
 ![Config Image](readme-front-1.png)
 
-Simple Image publishes the image with a simple <img< tag. Requires a single high resolution image. You can set the output dimensions and format (auto automatically chooses the best format for the browser used, or you can set WEBP, JPEG, PNG or GIF) as well as add various effects to the static image.
+Simple Image publishes the image with a simple <img> tag. Requires a single high resolution image. You can set the output dimensions and format (auto automatically chooses the best format for the browser used, or you can set WEBP, JPEG, PNG or GIF) as well as add various effects to the static image.
 
 ![Config Image](readme-front-2.png)
 
