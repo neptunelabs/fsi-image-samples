@@ -1,3 +1,6 @@
+.content {
+  max-width: 2000px;
+}
 .container {
   max-width: 960px;
 }
