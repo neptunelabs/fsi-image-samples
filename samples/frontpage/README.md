@@ -82,13 +82,6 @@ SVG:
 <img src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/logo-furniture-gre.svg" height="24">
 ```
 
-Video:
-```html
-<video class="vid-fluid" width="1215" autoplay loop>
-  <source src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/pexels-max-vakhtbovych-7749089.mp4" type="video/mp4">
-</video>
-```
-
 ## Testing with examples from  your own server
 
 To test the examples with images from your own [FSI Server](https://www.neptunelabs.com/fsi-server/), please first copy the env.yml.dist file to env.yml and adapt the file, then restart the main demo again.
