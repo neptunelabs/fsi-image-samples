@@ -44,19 +44,6 @@
     height: 150px;
   }
 
-  .btn-outline-custom {
-    color: #fff!important;;
-    border-color: #fff!important;
-  }
-
-  .lead {
-    color: #fff!important;
-  }
-
-  .vid-fluid {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 .btn-outline-custom {
