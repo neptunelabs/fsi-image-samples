@@ -17,7 +17,7 @@
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="#" aria-label="Product">
-      <img src="//fsi-site.neptunelabs.com/fsi/static/assets/samples/ssi/logo-furniture-gre.svg" height="24">
+      <img src="{{{fsi.server}}}/{{{fsi.context}}}/static/assets/samples/ssi/logo-furniture-gre.svg" height="24">
     </a>
     <a class="p-6 d-none d-md-inline-block" href="#">SHOP</a>
     <a class="p-6 d-none d-md-inline-block" href="#">COLLECTION</a>
@@ -28,9 +28,9 @@
 </header>
 
 <div class="row position-relative text-center">
-  <img class="img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=1903&rect=0,0.41576,1,0.17255" width="1903"
-       srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=1903&rect=0,0.41576,1,0.17255,
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=3806&rect=0,0.41576,1,0.17255 2x"
+  <img class="img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=1903&rect=0,0.41576,1,0.17255" width="1903"
+       srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=1903&rect=0,0.41576,1,0.17255,
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=3806&rect=0,0.41576,1,0.17255 2x"
        alt=""></div>
 
 <main class="content mx-auto">
@@ -43,68 +43,68 @@
   <div class="d-md-flex bg-light flex-md-equal w-100 py-3 px-5 mx-auto">
     <div class="row">
       <div class="col justify-content-start">
-    <p>
-      <a class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Filter Color</a>
-      <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Filter Wood Type</button>
-    </p>
-    <div class="row justify-content-star">
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample1">
-          <div class="card card-body">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexChecked1" checked>
-              <label class="form-check-label" for="flexChecked1">
-                Natural
-              </label>
+        <p>
+          <a class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Filter Color</a>
+          <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Filter Wood Type</button>
+        </p>
+        <div class="row justify-content-star">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexChecked1" checked>
+                  <label class="form-check-label" for="flexChecked1">
+                    Natural
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexChecked2" checked>
+                  <label class="form-check-label" for="flexChecked2">
+                    Charcoal
+                  </label>
+                </div>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexChecked2" checked>
-              <label class="form-check-label" for="flexChecked2">
-                Charcoal
-              </label>
-            </div>
-        </div>
-      </div>
-      </div>
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample2">
-          <div class="card card-body">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheck1" checked>
-              <label class="form-check-label" for="flexCheck1">
-                Oak
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheck2" checked>
-              <label class="form-check-label" for="flexCheck2">
-                Pine
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheck3" checked>
-              <label class="form-check-label" for="flexCheck3">
-                Mango
-              </label>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheck1" checked>
+                  <label class="form-check-label" for="flexCheck1">
+                    Oak
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheck2" checked>
+                  <label class="form-check-label" for="flexCheck2">
+                    Pine
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheck3" checked>
+                  <label class="form-check-label" for="flexCheck3">
+                    Mango
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-      </div>
-        <div class="col">
-    <div class="dropdown d-flex justify-content-end">
-      <button class="btn dropdown-toggle btn-sm btn-outline-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Sort By
-      </button>
-      <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Newest</a></li>
-        <li><a class="dropdown-item" href="#">Lowest Price</a></li>
-        <li><a class="dropdown-item" href="#">Highest Price</a></li>
-      </ul>
-    </div>
+      <div class="col">
+        <div class="dropdown d-flex justify-content-end">
+          <button class="btn dropdown-toggle btn-sm btn-outline-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Sort By
+          </button>
+          <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Newest</a></li>
+            <li><a class="dropdown-item" href="#">Lowest Price</a></li>
+            <li><a class="dropdown-item" href="#">Highest Price</a></li>
+          </ul>
         </div>
-  </div>
+      </div>
+    </div>
   </div>
   </div>
 
@@ -112,9 +112,9 @@
   <div class="row bg-light row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 px-5 py-3 w-100">
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=342&rect=0.11858,0,0.68721,1" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=342&rect=0.11858,0,0.68721,1,
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=684&rect=0.11858,0,0.68721,1 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=342&rect=0.11858,0,0.68721,1" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=342&rect=0.11858,0,0.68721,1,
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=684&rect=0.11858,0,0.68721,1 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Emma</div>
@@ -130,9 +130,9 @@
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=342&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=342&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=684&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=342&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=342&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=684&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Albion</div>
@@ -148,9 +148,9 @@
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-6o38huprH5o-unsplash.jpg&width=342&rect=0.22011,0,0.66667,1" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-6o38huprH5o-unsplash.jpg&width=342&rect=0.22011,0,0.66667,1,
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-6o38huprH5o-unsplash.jpg&width=684&rect=0.22011,0,0.66667,1 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-6o38huprH5o-unsplash.jpg&width=342&rect=0.22011,0,0.66667,1" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-6o38huprH5o-unsplash.jpg&width=342&rect=0.22011,0,0.66667,1,
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-6o38huprH5o-unsplash.jpg&width=684&rect=0.22011,0,0.66667,1 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Maral</div>
@@ -166,9 +166,9 @@
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-8-fz7SHllno-unsplash.jpg&width=342&rect=0,0.16033,0.88175,0.82065&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-8-fz7SHllno-unsplash.jpg&width=342&rect=0,0.16033,0.88175,0.82065&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-8-fz7SHllno-unsplash.jpg&width=684&rect=0,0.16033,0.88175,0.82065&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-8-fz7SHllno-unsplash.jpg&width=342&rect=0,0.16033,0.88175,0.82065&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-8-fz7SHllno-unsplash.jpg&width=342&rect=0,0.16033,0.88175,0.82065&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-8-fz7SHllno-unsplash.jpg&width=684&rect=0,0.16033,0.88175,0.82065&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Harlow</div>
@@ -187,9 +187,9 @@
   <div class="row bg-light row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 px-5 py-3 w-100">
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--0559Z7Sx4k-unsplash.jpg&width=342&rect=0.11771,0,0.76667,1" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--0559Z7Sx4k-unsplash.jpg&width=342&rect=0.11771,0,0.76667,1,
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--0559Z7Sx4k-unsplash.jpg&width=684&rect=0.11771,0,0.76667,1 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--0559Z7Sx4k-unsplash.jpg&width=342&rect=0.11771,0,0.76667,1" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--0559Z7Sx4k-unsplash.jpg&width=342&rect=0.11771,0,0.76667,1,
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--0559Z7Sx4k-unsplash.jpg&width=684&rect=0.11771,0,0.76667,1 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Hopper</div>
@@ -205,9 +205,9 @@
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-S_jZAOH1Zwg-unsplash.jpg&width=342&rect=0,0.33288,1,0.66712" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-S_jZAOH1Zwg-unsplash.jpg&width=342&rect=0,0.33288,1,0.66712,
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-S_jZAOH1Zwg-unsplash.jpg&width=684&rect=0,0.33288,1,0.66712 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-S_jZAOH1Zwg-unsplash.jpg&width=342&rect=0,0.33288,1,0.66712" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-S_jZAOH1Zwg-unsplash.jpg&width=342&rect=0,0.33288,1,0.66712,
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-S_jZAOH1Zwg-unsplash.jpg&width=684&rect=0,0.33288,1,0.66712 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Abbey</div>
@@ -223,26 +223,26 @@
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-73QMApyOCGg-unsplash.jpg&width=342&rect=0.19928,0,0.66667,1" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-73QMApyOCGg-unsplash.jpg&width=342&rect=0.19928,0,0.66667,1,
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-73QMApyOCGg-unsplash.jpg&width=684&rect=0.19928,0,0.66667,1 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-73QMApyOCGg-unsplash.jpg&width=342&rect=0.19928,0,0.66667,1" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-73QMApyOCGg-unsplash.jpg&width=342&rect=0.19928,0,0.66667,1,
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-73QMApyOCGg-unsplash.jpg&width=684&rect=0.19928,0,0.66667,1 2x"
              alt=""><div class="card-body">
-          <div class="col-6 product-heading">Maddy</div>
-          <p class="product-text">Shelving Unit, Pine Wood</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-            </div>
-            <small class="text-muted">$599</small>
+        <div class="col-6 product-heading">Maddy</div>
+        <p class="product-text">Shelving Unit, Pine Wood</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
           </div>
+          <small class="text-muted">$599</small>
         </div>
+      </div>
       </div>
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-SkOVlcn7Ga4-unsplash.jpg&width=342&rect=0,0.12484,1,0.65322" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-SkOVlcn7Ga4-unsplash.jpg&width=342&rect=0,0.12484,1,0.65322,
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-SkOVlcn7Ga4-unsplash.jpg&width=684&rect=0,0.12484,1,0.65322 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-SkOVlcn7Ga4-unsplash.jpg&width=342&rect=0,0.12484,1,0.65322" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-SkOVlcn7Ga4-unsplash.jpg&width=342&rect=0,0.12484,1,0.65322,
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-SkOVlcn7Ga4-unsplash.jpg&width=684&rect=0,0.12484,1,0.65322 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Murcia</div>
@@ -263,9 +263,9 @@
   <div class="row bg-light row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 px-5 py-3 w-100">
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--peWKMDCyw4-unsplash.jpg&width=342&rect=0.11978,0.07945,0.8022,0.92055" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--peWKMDCyw4-unsplash.jpg&width=342&rect=0.11978,0.07945,0.8022,0.92055,
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--peWKMDCyw4-unsplash.jpg&width=684&rect=0.11978,0.07945,0.8022,0.92055 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--peWKMDCyw4-unsplash.jpg&width=342&rect=0.11978,0.07945,0.8022,0.92055" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--peWKMDCyw4-unsplash.jpg&width=342&rect=0.11978,0.07945,0.8022,0.92055,
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley--peWKMDCyw4-unsplash.jpg&width=684&rect=0.11978,0.07945,0.8022,0.92055 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Finn</div>
@@ -281,9 +281,9 @@
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-PzYgEB4_pa0-unsplash.jpg&width=342&rect=0.17212,0.00378,0.75962,0.99622" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-PzYgEB4_pa0-unsplash.jpg&width=342&rect=0.17212,0.00378,0.75962,0.99622,
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-PzYgEB4_pa0-unsplash.jpg&width=684&rect=0.17212,0.00378,0.75962,0.99622 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-PzYgEB4_pa0-unsplash.jpg&width=342&rect=0.17212,0.00378,0.75962,0.99622" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-PzYgEB4_pa0-unsplash.jpg&width=342&rect=0.17212,0.00378,0.75962,0.99622,
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-PzYgEB4_pa0-unsplash.jpg&width=684&rect=0.17212,0.00378,0.75962,0.99622 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Naomi</div>
@@ -299,9 +299,9 @@
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-ALItHr7K5Pk-unsplash.jpg&width=342&rect=0.19857,0,0.80143,0.99243&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" width="342"
-             srcset="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-ALItHr7K5Pk-unsplash.jpg&width=342&rect=0.19857,0,0.80143,0.99243&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
-//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-ALItHr7K5Pk-unsplash.jpg&width=684&rect=0.19857,0,0.80143,0.99243&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x"
+        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-ALItHr7K5Pk-unsplash.jpg&width=342&rect=0.19857,0,0.80143,0.99243&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" width="342"
+             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-ALItHr7K5Pk-unsplash.jpg&width=342&rect=0.19857,0,0.80143,0.99243&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
+{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-ALItHr7K5Pk-unsplash.jpg&width=684&rect=0.19857,0,0.80143,0.99243&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x"
              alt="">
         <div class="card-body">
           <div class="col-6 product-heading">Hank</div>
@@ -316,9 +316,9 @@
       </div>
     </div>
     <div class="col">
-        </div>
-      </div>
     </div>
+  </div>
+  </div>
   </div>
   </div>
   </div>
@@ -387,9 +387,9 @@
       </div>
     </div>
     <div class="row">
-  <div class="credit">
-    Photos by <a class="link-secondary" href="https://unsplash.com/@nathanrjliving?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Oakley</a> on <a class="link-secondary" href="https://unsplash.com/@nathanrjliving?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  </div>
+      <div class="credit">
+        Photos by <a class="link-secondary" href="https://unsplash.com/@nathanrjliving?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Oakley</a> on <a class="link-secondary" href="https://unsplash.com/@nathanrjliving?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </div>
     </div>
   </div>
 </footer>
