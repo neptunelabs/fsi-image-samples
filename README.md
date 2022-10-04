@@ -36,7 +36,7 @@ To run and modify this samples:
 
 ```shell
 npm install
-npm start
+npm install
 ```
 or
 
