@@ -40,7 +40,7 @@ In this area you also can see the source code for your selected publishing optio
 You can then add the images to your site via image tag:
 
 ```html
- <img class="card-img-top img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-boFO5uIUKUU-unsplash.jpg&width=283" alt="" width="283">
+ <img class="card-img-top img-fluid" src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-boFO5uIUKUU-unsplash.jpg&width=283" alt="" width="283">
 ```
 You can change the width and/or height directly in the image tag, the image will scale accordingly.
 
@@ -61,7 +61,7 @@ Select OK as soon as you are finished.
 The URL created will look like this:
 
 
-[https://fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=1879&rect=0,0.41576,1,0.17255](https://fsi-site.neptunelabs.comp/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=1879&rect=0,0.41576,1,0.17255)
+[https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=1879&rect=0,0.41576,1,0.17255](https://docs.neptunelabs.comp/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-2zlZGqqmVGE-unsplash.jpg&width=1879&rect=0,0.41576,1,0.17255)
 
 The *&rect=* part defines the area of the cropping.
 
@@ -87,7 +87,7 @@ Select OK as soon as you are finished.
 The URL created will look like this:
 
 
-[https://fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=480&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(63,TL,0,0](https://fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=480&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(63,TL,0,0))
+[https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=480&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(63,TL,0,0](https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=480&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(63,TL,0,0))
 
 
 ## Testing with examples from  your own server

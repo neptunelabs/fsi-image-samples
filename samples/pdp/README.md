@@ -40,13 +40,13 @@ In this area you also can see the source code for your selected publishing optio
 You can then add the images to your site via image tag:
 
 ```html
-<img id="image" class="img-fluid" src="//fsi-site.neptunelabs.com/fsi/server?type=image&amp;source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&amp;width=940" width="940" alt="">
+<img id="image" class="img-fluid" src="//docs.neptunelabs.com/fsi/server?type=image&amp;source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&amp;width=940" width="940" alt="">
 ```
 You can change the width and/or height directly in the image tag, the image will scale accordingly.
 For example, the thumbnails on the left are much smaller:
 
 ```html
-<img class="thumbnail img-fluid" onclick="changeImage('0')" src="//fsi-site.neptunelabs.com/fsi/server?type=image&amp;source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&amp;width=150&amp;rect=0.15187,0,0.84813,1" width="150" alt="">
+<img class="thumbnail img-fluid" onclick="changeImage('0')" src="//docs.neptunelabs.com/fsi/server?type=image&amp;source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&amp;width=150&amp;rect=0.15187,0,0.84813,1" width="150" alt="">
 ```
 # Adding a crop effect
 
@@ -65,7 +65,7 @@ Select OK as soon as you are finished.
 The URL created will look like this:
 
 
-[https://fsi-site.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=480&rect=0.15187,0,0.84813,1](https://fsi-site.neptunelabs.comp/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=480&rect=0.15187,0,0.84813,1)
+[https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=480&rect=0.15187,0,0.84813,1](https://docs.neptunelabs.comp/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=480&rect=0.15187,0,0.84813,1)
 
 The *&rect=* part defines the area of the cropping.
 
