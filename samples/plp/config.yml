@@ -5,8 +5,8 @@ priority: 2
 jsfiddle:
   mapping:
     html: "index.html"
-    css: "category.css"
-    js: "category.js"
+    css: "plp.css"
+    js: "plp.js"
   resources:
     - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
     - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
