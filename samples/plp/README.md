@@ -1,4 +1,4 @@
-m# Product Listing Page - Embedding images using Single Source Imaging
+# Product Listing Page - Embedding images using Single Source Imaging
 
 This readme describes how the product listing page sample with *Single Source Imaging* of *FSI Server* is achieved.
 The aim of the demo is to show how you can easily integrate different sizes and formats of an image by simply changing the Image URL.
