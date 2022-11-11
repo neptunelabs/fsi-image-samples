@@ -38,13 +38,14 @@
 }
 
 .btn-outline-custom {
-  color: #000;
-  border-color: #000!important;
+  color: #fff!important;
+  border-color: #fff!important;
+  background-color: #91B595!important;
 }
 
 .btn-outline-custom:hover {
-  color: #fff!important;
-  border-color: #fff!important;
+  color: #364537 !important;
+  border-color: #364537!important;
   background-color: #91B595!important;
 }
 
