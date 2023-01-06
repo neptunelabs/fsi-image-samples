@@ -1,14 +1,32 @@
-title: Product Listing Page
-image: logo.png
-description: Shows how a product listing page could look with dynamic imaging used.
-priority: 2
-jsfiddle:
+overview:
+  title: Product Listing Page
+  image: logo.png
+  description: Shows how a product listing page could look with dynamic imaging used.
+  order: 2
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/furniture-menu.yml
+      hero:
+        url: /server?type=image&source=images/samples/ssi/furniture/house-6691124.jpg&width=1903&rect=0.01416,0.53388,0.75133,0.21963
+        height: 30vh
+        logo:
+          url: /static/assets/samples/ssi/sale.svg
+          height: 30%
+        title: Black Friday
+        description: Check out our furniture sale.
+        link: SHOP NOW
+      categories: true
+      footer: true
+      fsi:
+        touchZoom: true
+      bootstrap:
+        icons: false
   mapping:
     html: "index.html"
     css: "plp.css"
     js: "plp.js"
-  resources:
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js
-    - https://cdn.jsdelivr.net/npm/bootstrap-icons@{{dependencies.bootstrapIcons}}/font/bootstrap-icons.css
+jsfiddle:
+  deploy: true

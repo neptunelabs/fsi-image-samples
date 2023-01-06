@@ -1,14 +1,34 @@
-title: Website Frontpage
-image: logo.png
-description: Shows how a frontpage could look with dynamic imaging and static assets from FSI Server.
-priority: 1
-jsfiddle:
+overview:
+  title: Website Frontpage
+  image: logo.png
+  description: Shows how a frontpage could look with dynamic imaging and static assets from FSI Server.
+  order: 1
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/furniture-menu.yml
+      hero:
+        url: /server?type=image&source=images/samples/ssi/furniture/house-6691124.jpg&width=1903&rect=0.01416,0.53388,0.75133,0.21963
+        height: 33vh
+        logo:
+          url: /static/assets/samples/ssi/sale.svg
+          height: 50%
+        title: Black Friday
+        description: Check out our furniture sale.
+        link: SHOP NOW
+      featured:
+        template: data/furniture-featured.yml
+      categories: true
+      footer: true
+      fsi:
+        touchZoom: true
+      bootstrap:
+        icons: false
   mapping:
-    html: "index.html"
-    css: "frontpage.css"
-    js: "frontpage.js"
-  resources:
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js
-    - https://cdn.jsdelivr.net/npm/bootstrap-icons@{{dependencies.bootstrapIcons}}/font/bootstrap-icons.css
+    html: 'index.html'
+    css: 'frontpage.css'
+    js: 'frontpage.js'
+jsfiddle:
+  deploy: true

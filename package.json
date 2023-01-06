@@ -3,7 +3,7 @@
     "name": "NeptuneLabs GmbH",
     "url": "https://www.neptunelabs.com/"
   },
-  "version": "22.11.03",
+  "version": "23.01.06",
   "homepage": "https://www.neptunelabs.com/fsi-image",
   "repository": {
     "type": "git",
@@ -12,14 +12,15 @@
   "license": "Apache-2.0",
   "private": true,
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0 <20",
     "npm": ">=6.0.0"
   },
   "devDependencies": {
-    "@neptunelabs/fsi-samples-framework": "^0.9.1",
-    "prettier": "^2.7.1"
+    "@neptunelabs/fsi-samples-framework": "file:../fsi-samples-framework",
+    "prettier": "^2.8.1"
   },
   "scripts": {
     "start": "start-sample"
   }
 }
+

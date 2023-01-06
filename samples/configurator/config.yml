@@ -1,4 +1,24 @@
-title: Product Configurator
-image: logo.png
-description: A configurator shows how alpha channels can be used.
-priority: 5
+overview:
+  title: Product Configurator
+  image: logo.png
+  description: A configurator shows how alpha channels can be used.
+  order: 5
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/clothing-menu.yml
+      featured:
+        template: data/clothing-featured.yml
+      footer: true
+      fsi:
+        touchZoom: true
+      bootstrap:
+        icons: false
+  mapping:
+    html: 'index.html'
+    css: 'config.css'
+    js: 'config.js'
+jsfiddle:
+  deploy: true
