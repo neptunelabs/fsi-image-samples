@@ -15,7 +15,7 @@ sample:
       fsi:
         touchZoom: true
       bootstrap:
-        icons: false
+        icons: true
   mapping:
     html: 'index.html'
     css: 'config.css'
