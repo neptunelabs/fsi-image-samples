@@ -1,47 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <title>Simple FSI Image Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href='frontpage.css' type="text/css"/>
-  <script src='frontpage.js'></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css">
-</head>
-<body class="bg-light">
-
-<header class="site-header sticky-top py-1">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
-      <img src="{{{fsi.server}}}/{{{fsi.context}}}/static/assets/samples/ssi/logo-furniture-gre.svg" height="24">
-    </a>
-    <a class="p-6 d-none d-md-inline-block" href="#">SHOP</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">COLLECTION</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">BLOG</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">CONTACT</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">CART</a>
-  </nav>
-</header>
-
-<div class="position-absolute text-center mx-auto w-100 p-0">
-  <img src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/house-6691124.jpg&width=1903&rect=0.01416,0.53388,0.75133,0.21963" width="1903"
-       srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/house-6691124.jpg&width=1903&rect=0.01416,0.53388,0.75133,0.21963,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/house-6691124.jpg&width=3806&rect=0.01416,0.53388,0.75133,0.21963 2x"
-       alt="">
-</div>
-<div class="row position-relative text-center w-100">
-  <div class="col-md-4 col-sm-2 pb-lg-5 my-lg-5">
-    <img class="sale-badge" src="{{{fsi.server}}}/{{{fsi.context}}}/static/assets/samples/ssi/sale.svg" height="300">
-  </div>
-  <div class="col-md-8 col-sm-10 pt-lg-5 my-lg-5 pb-sm-1">
-    <h2 class="display-5 fw-normal">Black Friday</h2>
-    <p class="lead fw-normal">Check out our furniture sale.</p>
-    <a class="btn btn-outline-custom" href="#">SHOP NOW</a>
-  </div>
-</div>
-
-<main class="content mx-auto">
+<div class="container">
   <div class="d-md-flex bg-light flex-md-equal w-100 py-3 mx-auto text-center overflow-hidden">
     <h2 class="display-5">Featured Products</h2>
   </div>
@@ -242,49 +199,4 @@
            alt="">
     </div>
   </div>
-
-</main>
-
-<footer class="py-5 footer w-100 overflow-hidden">
-  <div class="container py-5">
-    <div class="row ">
-      <div class="col-lg-3 mb-3">
-        <h4>Example Company</h4>
-        <ul class="list-unstyled small text-muted">
-          <li class="mb-2">Designed based on the <a class="link-secondary" href="https://getbootstrap.com/docs/5.0/examples/">Bootstrap examples</a>. Implemented to show various samples on how to use <a class="link-secondary" href="https://www.neptunelabs.com/fsi-server/">FSI Server</a>.</li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Cool stuff</a></li>
-          <li><a class="link-secondary" href="#">Random feature</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Resource name</a></li>
-          <li><a class="link-secondary" href="#">Another resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Another Resource</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Business</a></li>
-          <li><a class="link-secondary" href="#">Education</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Team</a></li>
-          <li><a class="link-secondary" href="#">Locations</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-</body>
-</html>
+</div>
