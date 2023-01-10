@@ -11,7 +11,14 @@ sample:
         template: data/clothing-menu.yml
       featured:
         template: data/clothing-featured.yml
-      footer: true
+      footer:
+        credits:
+          photos:
+            - author: Artem Bondarchuk
+              link: https://unsplash.com/@artembondarchuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+              platform: Unsplash
+          viewer:
+            link: https://www.neptunelabs.com/dynamic-imaging/
       fsi:
         touchZoom: true
       bootstrap:

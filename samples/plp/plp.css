@@ -29,16 +29,6 @@ a:hover {
   border: 1px solid #212529!important;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.btn-outline-secondary {
-  color: #000!important;
-  border-color: #000!important;
-}
-
-.btn-outline-secondary:hover {
-  color: #fff!important;
-  border-color: #fff!important;
-  background-color: #91B595!important;
-}
 
 .product-heading {
   font-size: 0.9rem;

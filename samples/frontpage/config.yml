@@ -18,9 +18,15 @@ sample:
         title: Black Friday
         description: Check out our furniture sale.
         link: SHOP NOW
-
       categories: true
-      footer: true
+      footer:
+        credits:
+          photos:
+            author: various artists
+            link: https://pixabay.com/
+            platform: Pixabay
+          viewer:
+            link: https://www.neptunelabs.com/dynamic-imaging/
       fsi:
         touchZoom: true
       bootstrap:

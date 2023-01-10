@@ -12,7 +12,14 @@ sample:
       highlight: DEAL OF THE DAY
       featured:
         template: data/furniture-featured.yml
-      footer: true
+      footer:
+        credits:
+          photos:
+            author: various artists
+            link: https://pixabay.com/
+            platform: Pixabay
+          viewer:
+            link: https://www.neptunelabs.com/dynamic-imaging/
       fsi:
         touchZoom: true
       bootstrap:
