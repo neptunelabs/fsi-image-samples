@@ -10,14 +10,8 @@ sample:
       menu:
         template: data/furniture-menu.yml
       hero:
-        url: /server?type=image&source=images/samples/ssi/furniture/house-6691124.jpg&width=1903&rect=0.01416,0.53388,0.75133,0.21963
+        url: /server?type=image&source=images/samples/ssi/furniture/tv-cabinet-6185020.jpg&width=1903&rect=0.08146,0.53855,0.85105,0.21963
         height: 30vh
-        logo:
-          url: /static/assets/samples/ssi/sale.svg
-          height: 30%
-        title: Black Friday
-        description: Check out our furniture sale.
-        link: SHOP NOW
       categories: true
       footer: true
       fsi:
