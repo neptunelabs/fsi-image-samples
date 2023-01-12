@@ -1,3 +1,4 @@
+
 .page-item.active .page-link {
   z-index: 3;
   color: #fff!important;
@@ -13,9 +14,6 @@
   background-color: #e9ecef;
   border-color: #91B595!important;
 }
-a:hover {
-  color: #91B595!important;
-}
 
 .page-link {
   padding: .375rem .75rem;
@@ -30,32 +28,3 @@ a:hover {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.product-heading {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.product-price {
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-align: left;
-}
-
-
-.product-text {
-  font-size: 0.8rem;
-}
-
-.pdp-text {
-  z-index: 1020;
-  position: sticky;
-}
-
-.flex-equal > * {
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    flex: 1;
-  }
-}
