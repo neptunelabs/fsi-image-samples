@@ -14,7 +14,7 @@ sample:
         height: 33vh
         logo:
           url: /static/assets/samples/ssi/sale.svg
-          height: 50%
+          height: 40%
         title: Black Friday
         description: Check out our furniture sale.
         link: SHOP NOW
