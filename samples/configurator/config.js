@@ -24,22 +24,22 @@ function addElements() {
     { Name: "Sun", Class: "sun", colorValue: "55,68,13" }
   ];
 
-  var content = document.getElementById('leather');
+  let content = document.getElementById('leather');
 
   colorSet.map((colorSet, index) => {
-    var Name = colorSet.Name;
-    var parentDiv = document.createElement('div');
-    var pillDiv = document.createElement('div');
+    let Name = colorSet.Name;
+    let parentDiv = document.createElement('div');
+    let pillDiv = document.createElement('div');
     let colorCl;
     colorCl = "icon-" + colorSet.Class + "-round";
     parentDiv.setAttribute('class', 'position-relative');
     pillDiv.setAttribute('class', 'position-absolute badge rounded-pill color-badge');
 
-    var Node = document.createTextNode(Name);
+    let Node = document.createTextNode(Name);
     pillDiv.appendChild(Node);
     parentDiv.appendChild(pillDiv);
 
-    var Input = document.createElement('input');
+    let Input = document.createElement('input');
     Input.setAttribute('type', 'radio');
     Input.setAttribute('name', 'btnradio');
     Input.setAttribute('id', Name);
@@ -47,7 +47,7 @@ function addElements() {
     Input.setAttribute('autocomplete', 'off');
     parentDiv.appendChild(Input);
 
-    var Label = document.createElement('label');
+    let Label = document.createElement('label');
     Label.setAttribute('class', colorCl + " btn-circle btn-round me-4");
     Label.setAttribute('for', Name);
     Label.setAttribute('data-role', 'leatherChange');
@@ -69,7 +69,7 @@ function initClick() {
 function changeColor(el) {
   let img;
   let curImage = document.getElementById('image');
-  var imgbase = "{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=";
+  let imgbase = "{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=";
 
   switch (el.dataset.role) {
     case 'leatherChange':
