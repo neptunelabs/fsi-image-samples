@@ -1,41 +1,21 @@
-.btn-outline-custom {
-  color: #000 !important;
-  border-color: #000 !important;
+.btn-circle.btn-round {
+  width: 50px;
+  height: 50px;
+  padding: 13px 18px;
+  border-radius: 60px;
+  border: 2px solid transparent!important;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.btn-outline-custom:hover {
-  color: #fff !important;
-  border-color: #fff !important;
-  background-color: #91B595 !important;
+.btn-check {
+  top: 50px;
 }
 
-.border-custom {
-  margin: 1rem 0;
-  border-bottom-color: #ced4da !important;
-  border: 0;
-  border-bottom: 1px solid;
-}
+.btn-check:checked+.btn-circle.btn-round{
+  border: 2px solid #666666!important;
 
-.credit {
-  font-size: x-small;
-  color: #666666;
-  text-align: left;
-  padding-right: 10px;
-}
-
-.flex-equal > * {
-  flex: 1;
-}
-
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    flex: 1;
-  }
-}
-
-.accordion-button:not(.collapsed) {
-  color: #212529 !important;
-  background-color: #f9fafb;
 }
 
 .thumb-icon {
@@ -50,72 +30,72 @@
 }
 
 .icon-salmon-round {
-  color: #e3867e;
+  background-color: #e3867e;
 }
 
 .icon-orange-round {
-  color: #fd6a4b;
+  background-color: #fd6a4b;
 }
 
 .icon-blue-round {
-  color: #3fadfc;
+  background-color: #3fadfc;
 }
 
-.icon-icy-round {
-  color: #60e9cb;
+.icon-fresh-round {
+  background-color: #60e9cb;
 }
 
-.icon-ligreen-round {
-  color: #6ef55c;
+.icon-lime-round {
+  background-color: #6ef55c;
 }
 
 .icon-purple-round {
-  color: #8f92f3;
+  background-color: #8f92f3;
 }
 
-.icon-lirose-round {
-  color: #dfc4c2;
+.icon-light-rose-round {
+  background-color: #dfc4c2;
 }
 
 .icon-pastel-pink-round {
-  color: #e1b7af;
+  background-color: #e1b7af;
 }
 
-.icon-lavender-round {
-  color: #b9caf9;
+.icon-mauve-round {
+  background-color: #b9caf9;
 }
 
 .icon-cream-round {
-  color: #fbd9c1;
+  background-color: #fbd9c1;
 }
 
 .icon-berry-round {
-  color: #fc769f;
+  background-color: #fc769f;
 }
 
 .icon-sun-round {
-  color: #f8e973;
+  background-color: #f8e973;
 }
 
 .icon-coffee-round {
-  color: #96736a;
+  background-color: #96736a;
 }
 
 .icon-rose-round {
-  color: #ecd1c5;
+  background-color: #ecd1c5;
 }
 
 .icon-ivory-round {
-  color: #dac6c2;
+  background-color: #dac6c2;
 }
 
 .icon-sand-round {
-  color: #b78c8a;
+  background-color: #b78c8a;
 }
 
 .color-badge {
-  font-size: .65em !important;
-  top: -80% !important;
-  left: 70%;
+  font-size: 0.65em !important;
   background-color: #666666;
+  top: 0;
+  right: 0;
 }

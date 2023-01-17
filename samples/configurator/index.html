@@ -12,53 +12,51 @@
           <img class="thumbnail" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/configurator/leather-upper.png&height=60" height="60" alt="">
           Leather Upper 1
             </div>
-          <div id="leather">
-            <span class="position-relative"><i data-role="leatherChange" data-value="11,17,0" class="bi bi-circle-fill icon-coffee-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Coffee</span></span>
-            <span class="position-relative"><i data-role="leatherChange" data-value="4,66,10" class="bi bi-circle-fill icon-salmon-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Salmon</span></span>
-            <span class="position-relative"><i data-role="leatherChange" data-value="10,100,0" class="bi bi-circle-fill icon-orange-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Orange</span></span>
-            <span class="position-relative"><i data-role="leatherChange" data-value="342,98,17" class="bi bi-circle-fill icon-berry-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Berry</span></span>
-            <span class="position-relative"><i data-role="leatherChange" data-value="227,90,55" class="bi bi-circle-fill icon-lavender-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Mauve</span></span>
-            <span class="position-relative"><i data-role="leatherChange" data-value="238,83,00" class="bi bi-circle-fill icon-purple-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Purple</span></span>
-            <span class="position-relative"><i data-role="leatherChange" data-value="205,100,0" class="bi bi-circle-fill icon-blue-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Blue</span></span>
-            <span class="position-relative"><i data-role="leatherChange" data-value="167,83,0" class="bi bi-circle-fill icon-icy-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Fresh</span></span>
-            <span class="position-relative"><i data-role="leatherChange" data-value="114,83,0" class="bi bi-circle-fill icon-ligreen-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Lime</span></span>
-            <span class="position-relative"><i data-role="leatherChange" data-value="55,68,13" class="bi bi-circle-fill icon-sun-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Sun</span></span>
-          </div>
-          </div>
+            <div class="btn-group pb-3" role="group" aria-label="Leather Upper Buttons" id="leather"></div>
           <div class="pb-1 border-custom">
             <div class="pb-3">
               <img class="thumbnail" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/configurator/leather-upper1.png&height=60" height="60" alt="">
               Leather Upper 2
             </div>
-            <div id="leather2">
-              <span class="position-relative"><i data-role="leatherTwoChange" data-value="26,90,55" class="bi bi-circle-fill icon-cream-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Cream</span></span>
-              <span class="position-relative"><i data-role="leatherTwoChange" data-value="11,17,0" class="bi bi-circle-fill icon-coffee-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Coffee</span></span>
-              <span class="position-relative"><i data-role="leatherTwoChange" data-value="4,66,10" class="bi bi-circle-fill icon-salmon-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Salmon</span></span>
-              <span class="position-relative"><i data-role="leatherTwoChange" data-value="10,100,0" class="bi bi-circle-fill icon-orange-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Orange</span></span>
-              <span class="position-relative"><i data-role="leatherTwoChange" data-value="342,98,17" class="bi bi-circle-fill icon-berry-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Berry</span></span>
-              <span class="position-relative"><i data-role="leatherTwoChange" data-value="227,90,55" class="bi bi-circle-fill icon-lavender-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Mauve</span></span>
-              <span class="position-relative"><i data-role="leatherTwoChange" data-value="238,83,00" class="bi bi-circle-fill icon-purple-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Purple</span></span>
-              <span class="position-relative"><i data-role="leatherTwoChange" data-value="205,100,0" class="bi bi-circle-fill icon-blue-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Blue</span></span>
-            <span class="position-relative"><i data-role="leatherTwoChange" data-value="114,83,0" class="bi bi-circle-fill icon-ligreen-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Lime</span></span>
-              <span class="position-relative"><i data-role="leatherTwoChange" data-value="55,68,13" class="bi bi-circle-fill icon-sun-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Sun</span></span>
-            </div>
+            <div class="btn-group pb-3" role="group" aria-label="Leather 2 Upper Buttons" id="leather2">
+              <input type="radio" class="btn-check" name="btnradio" id="btnle21" autocomplete="off" checked>
+              <label class="icon-coffee-round btn-circle btn-round me-4" data-role="leatherChange" data-value="11,17,0" for="btnle21"><div class="position-sticky badge rounded-pill color-badge">Coffee</div></label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnle22" autocomplete="off">
+              <label class="icon-salmon-round btn-circle btn-round me-4" data-role="leatherChange" data-value="4,66,10" for="btnle22"><div class="position-sticky badge rounded-pill color-badge">Salmon</div></label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnle23" autocomplete="off" checked>
+              <label class="icon-orange-round btn-circle btn-round me-4" data-role="leatherChange" data-value="10,100,0" for="btnle23"><div class="position-sticky badge rounded-pill color-badge">Orange</div></label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnle24" autocomplete="off">
+              <label class="icon-berry-round btn-circle btn-round me-4" data-role="leatherChange" data-value="342,98,17" for="btnle24"><div class="position-sticky badge rounded-pill color-badge">Berry</div></label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnle25" autocomplete="off" checked>
+              <label class="icon-mauve-round btn-circle btn-round me-4" data-role="leatherChange" data-value="227,90,55" for="btnle25"><div class="position-sticky badge rounded-pill color-badge">Mauve</div></label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnle26" autocomplete="off">
+              <label class="icon-purple-round btn-circle btn-round me-4" data-role="leatherChange" data-value="238,83,00" for="btnle26"><div class="position-sticky badge rounded-pill color-badge">Purple</div></label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnle27" autocomplete="off" checked>
+              <label class="icon-blue-round btn-circle btn-round me-4" data-role="leatherChange" data-value="205,100,0" for="btnle27"><div class="position-sticky badge rounded-pill color-badge">Blue</div></label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnle28" autocomplete="off">
+              <label class="icon-fresh-round btn-circle btn-round me-4" data-role="leatherChange" data-value="167,83,0" for="btnle28"><div class="position-sticky badge rounded-pill color-badge">Fresh</div></label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnle29" autocomplete="off" checked>
+              <label class="icon-lime-round btn-circle btn-round me-4" data-role="leatherChange" data-value="114,83,0" for="btnle29"><div class="position-sticky badge rounded-pill color-badge">Lime</div></label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnle210" autocomplete="off">
+              <label class="icon-sun-round btn-circle btn-round me-4" data-role="leatherChange" data-value="55,68,13" for="btnle210"><div class="position-sticky badge rounded-pill color-badge">Sun</div></label></div>
           </div>
           <div class="pb-1 border-custom">
             <div class="pb-3">
               <img class="thumbnail" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/configurator/suede-upper.png&height=60" height="60" alt="">
               Suede
             </div>
-            <div id="suede">
-              <span class="position-relative"><i data-role="suedeChange" data-value="26,90,55" class="bi bi-circle-fill icon-cream-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Cream</span></span>
-              <span class="position-relative"><i data-role="suedeChange" data-value="0,24,0" class="bi bi-circle-fill icon-sand-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Sand</span></span>
-              <span class="position-relative"><i data-role="suedeChange" data-value="4,66,10" class="bi bi-circle-fill icon-salmon-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Salmon</span></span>
-              <span class="position-relative"><i data-role="suedeChange" data-value="10,100,0" class="bi bi-circle-fill icon-orange-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Orange</span></span>
-              <span class="position-relative"><i data-role="suedeChange" data-value="342,98,17" class="bi bi-circle-fill icon-berry-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Berry</span></span>
-              <span class="position-relative"><i data-role="suedeChange" data-value="227,90,55" class="bi bi-circle-fill icon-lavender-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Mauve</span></span>
-              <span class="position-relative"><i data-role="suedeChange" data-value="238,83,00" class="bi bi-circle-fill icon-purple-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Purple</span></span>
-              <span class="position-relative"><i data-role="suedeChange" data-value="205,100,0" class="bi bi-circle-fill icon-blue-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Blue</span></span>
-              <span class="position-relative"><i data-role="suedeChange" data-value="114,83,0" class="bi bi-circle-fill icon-ligreen-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Lime</span></span>
-              <span class="position-relative"><i data-role="suedeChange" data-value="55,68,13" class="bi bi-circle-fill icon-sun-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Sun</span></span>
+            <div class="btn-group" role="group" aria-label="Suede Buttons" id="suede">
+              <button type="button" data-bs-toggle="button" class="icon-cream-round btn-circle btn-round me-4 me-4" data-role="suedeChange" data-value="26,90,55"><div class="position-sticky badge rounded-pill color-badge">Cream</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-coffee-round btn-circle btn-round me-4 me-4" data-role="suedeChange" data-value="11,17,0"><div class="position-sticky badge rounded-pill color-badge">Coffee</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-salmon-round btn-circle btn-round me-4"  data-role="suedeChange" data-value="4,66,10"><div class="position-sticky badge rounded-pill color-badge">Salmon</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-orange-round btn-circle btn-round me-4" data-role="suedeChange" data-value="10,100,0"><div class="position-sticky badge rounded-pill color-badge">Orange</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-berry-round btn-circle btn-round me-4" data-role="suedeChange" data-value="342,98,17"><div class="position-sticky badge rounded-pill color-badge">Berry</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-mauve-round btn-circle btn-round me-4" data-role="suedeChange" data-value="227,90,55"><div class="position-sticky badge rounded-pill color-badge">Mauve</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-purple-round btn-circle btn-round me-4" data-role="suedeChange" data-value="238,83,00"><div class="position-sticky badge rounded-pill color-badge">Purple</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-blue-round btn-circle btn-round me-4" data-role="suedeChange" data-value="205,100,0"><div class="position-sticky badge rounded-pill color-badge">Blue</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-fresh-round btn-circle btn-round me-4" data-role="suedeChange" data-value="167,83,0"><div class="position-sticky badge rounded-pill color-badge">Fresh</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-lime-round btn-circle btn-round me-4" data-role="suedeChange" data-value="114,83,0"><div class="position-sticky badge rounded-pill color-badge">Lime</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-sun-round btn-circle btn-round me-4" data-role="suedeChange" data-value="55,68,13"><div class="position-sticky badge rounded-pill color-badge">Sun</div></button>
             </div>
           </div>
           <div class="pb-1 border-custom">
@@ -66,17 +64,18 @@
               <img class="thumbnail" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/configurator/highlight.png&height=60" height="60" alt="">
               Highlight 1
             </div>
-            <div id="highlight">
-              <span class="position-relative"><i data-role="highlightChange" data-value="26,90,55" class="bi bi-circle-fill icon-cream-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Cream</span></span>
-              <span class="position-relative"><i data-role="highlightChange" data-value="10,50,0" class="bi bi-circle-fill icon-rose-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Rose</span></span>
-              <span class="position-relative"><i data-role="highlightChange" data-value="4,66,10" class="bi bi-circle-fill icon-salmon-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Salmon</span></span>
-              <span class="position-relative"><i data-role="highlightChange" data-value="10,100,0" class="bi bi-circle-fill icon-orange-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Orange</span></span>
-              <span class="position-relative"><i data-role="highlightChange" data-value="342,98,17" class="bi bi-circle-fill icon-berry-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Berry</span></span>
-              <span class="position-relative"><i data-role="highlightChange" data-value="227,90,55" class="bi bi-circle-fill icon-lavender-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Mauve</span></span>
-              <span class="position-relative"><i data-role="highlightChange" data-value="238,83,00" class="bi bi-circle-fill icon-purple-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Purple</span></span>
-              <span class="position-relative"><i data-role="highlightChange" data-value="205,100,0" class="bi bi-circle-fill icon-blue-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Blue</span></span>
-              <span class="position-relative"><i data-role="highlightChange" data-value="114,83,0" class="bi bi-circle-fill icon-ligreen-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Lime</span></span>
-              <span class="position-relative"><i data-role="highlightChange" data-value="55,68,13" class="bi bi-circle-fill icon-sun-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Sun</span></span>
+            <div class="btn-group" role="group" aria-label="Highlight 1 Buttons" id="highlight">
+              <button type="button" data-bs-toggle="button" class="icon-cream-round btn-circle btn-round me-4 me-4" data-role="highlightChange" data-value="26,90,55"><div class="position-sticky badge rounded-pill color-badge">Cream</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-coffee-round btn-circle btn-round me-4 me-4" data-role="highlightChange" data-value="11,17,0"><div class="position-sticky badge rounded-pill color-badge">Coffee</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-salmon-round btn-circle btn-round me-4"  data-role="highlightChange" data-value="4,66,10"><div class="position-sticky badge rounded-pill color-badge">Salmon</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-orange-round btn-circle btn-round me-4" data-role="highlightChange" data-value="10,100,0"><div class="position-sticky badge rounded-pill color-badge">Orange</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-berry-round btn-circle btn-round me-4" data-role="highlightChange" data-value="342,98,17"><div class="position-sticky badge rounded-pill color-badge">Berry</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-mauve-round btn-circle btn-round me-4" data-role="highlightChange" data-value="227,90,55"><div class="position-sticky badge rounded-pill color-badge">Mauve</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-purple-round btn-circle btn-round me-4" data-role="highlightChange" data-value="238,83,00"><div class="position-sticky badge rounded-pill color-badge">Purple</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-blue-round btn-circle btn-round me-4" data-role="highlightChange" data-value="205,100,0"><div class="position-sticky badge rounded-pill color-badge">Blue</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-fresh-round btn-circle btn-round me-4" data-role="highlightChange" data-value="167,83,0"><div class="position-sticky badge rounded-pill color-badge">Fresh</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-lime-round btn-circle btn-round me-4" data-role="highlightChange" data-value="114,83,0"><div class="position-sticky badge rounded-pill color-badge">Lime</div></button>
+              <button type="button" data-bs-toggle="button" class="icon-sun-round btn-circle btn-round me-4" data-role="highlightChange" data-value="55,68,13"><div class="position-sticky badge rounded-pill color-badge">Sun</div></button>
             </div>
           </div>
           <div class="pb-1 border-custom">
@@ -84,21 +83,23 @@
               <img class="thumbnail" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/configurator/highlight1.png&height=60" height="60" alt="">
               Highlight 2
             </div>
-            <div id="highlight2">
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="26,90,55" class="bi bi-circle-fill icon-cream-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Cream</span></span>
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="10,24,0" class="bi bi-circle-fill icon-ivory-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Ivory</span></span>
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="4,66,10" class="bi bi-circle-fill icon-salmon-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Salmon</span></span>
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="10,100,0" class="bi bi-circle-fill icon-orange-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Orange</span></span>
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="342,98,17" class="bi bi-circle-fill icon-berry-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Berry</span></span>
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="227,90,55" class="bi bi-circle-fill icon-lavender-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Mauve</span></span>
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="238,83,00" class="bi bi-circle-fill icon-purple-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Purple</span></span>
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="205,100,0" class="bi bi-circle-fill icon-blue-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Blue</span></span>
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="114,83,0" class="bi bi-circle-fill icon-ligreen-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Lime</span></span>
-            <span class="position-relative"><i data-role="highlightTwoChange" data-value="55,68,13" class="bi bi-circle-fill icon-sun-round thumb-icon pt-3"></i><span class="position-absolute translate-middle badge rounded-pill color-badge">Sun</span></span>
+            <div class="btn-group" role="group" aria-label="Highlight 2 Buttons" id="highlight2">
+            <button type="button" data-bs-toggle="button" class="icon-cream-round btn-circle btn-round me-4 me-4" data-role="highlightTwoChange" data-value="26,90,55"><div class="position-sticky badge rounded-pill color-badge">Cream</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-coffee-round btn-circle btn-round me-4 me-4" data-role="highlightTwoChange" data-value="11,17,0"><div class="position-sticky badge rounded-pill color-badge">Coffee</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-salmon-round btn-circle btn-round me-4"  data-role="highlightTwoChange" data-value="4,66,10"><div class="position-sticky badge rounded-pill color-badge">Salmon</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-orange-round btn-circle btn-round me-4" data-role="highlightTwoChange" data-value="10,100,0"><div class="position-sticky badge rounded-pill color-badge">Orange</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-berry-round btn-circle btn-round me-4" data-role="highlightTwoChange" data-value="342,98,17"><div class="position-sticky badge rounded-pill color-badge">Berry</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-mauve-round btn-circle btn-round me-4" data-role="highlightTwoChange" data-value="227,90,55"><div class="position-sticky badge rounded-pill color-badge">Mauve</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-purple-round btn-circle btn-round me-4" data-role="highlightTwoChange" data-value="238,83,00"><div class="position-sticky badge rounded-pill color-badge">Purple</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-blue-round btn-circle btn-round me-4" data-role="highlightTwoChange" data-value="205,100,0"><div class="position-sticky badge rounded-pill color-badge">Blue</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-fresh-round btn-circle btn-round me-4" data-role="highlightTwoChange" data-value="167,83,0"><div class="position-sticky badge rounded-pill color-badge">Fresh</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-lime-round btn-circle btn-round me-4" data-role="highlightTwoChange" data-value="114,83,0"><div class="position-sticky badge rounded-pill color-badge">Lime</div></button>
+            <button type="button" data-bs-toggle="button" class="icon-sun-round btn-circle btn-round me-4" data-role="highlightTwoChange" data-value="55,68,13"><div class="position-sticky badge rounded-pill color-badge">Sun</div></button>
           </div>
           </div>
         </div>
       </div>
     </div>
 
+    </div>
 </div>
