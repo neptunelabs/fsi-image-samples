@@ -15,7 +15,6 @@
 
 .btn-check:checked+.btn-circle.btn-round{
   border: 2px solid #666666!important;
-
 }
 
 .thumb-icon {
@@ -27,70 +26,6 @@
 .thumbnail {
   padding-right: 1rem;
   padding-bottom: 1rem;
-}
-
-.icon-salmon-round {
-  background-color: #e3867e;
-}
-
-.icon-orange-round {
-  background-color: #fd6a4b;
-}
-
-.icon-blue-round {
-  background-color: #3fadfc;
-}
-
-.icon-fresh-round {
-  background-color: #60e9cb;
-}
-
-.icon-lime-round {
-  background-color: #6ef55c;
-}
-
-.icon-purple-round {
-  background-color: #8f92f3;
-}
-
-.icon-light-rose-round {
-  background-color: #dfc4c2;
-}
-
-.icon-pastel-pink-round {
-  background-color: #e1b7af;
-}
-
-.icon-mauve-round {
-  background-color: #b9caf9;
-}
-
-.icon-cream-round {
-  background-color: #fbd9c1;
-}
-
-.icon-berry-round {
-  background-color: #fc769f;
-}
-
-.icon-sun-round {
-  background-color: #f8e973;
-}
-
-.icon-coffee-round {
-  background-color: #96736a;
-}
-
-.icon-rose-round {
-  background-color: #ecd1c5;
-}
-
-.icon-ivory-round {
-  background-color: #dac6c2;
-}
-
-.icon-sand-round {
-  background-color: #b78c8a;
 }
 
 .color-badge {
