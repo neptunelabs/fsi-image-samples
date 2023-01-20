@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('image').src = getColorizeImage(clipColors)
 })
 
-const baseImgPath = '{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/configurator/'
+const baseImgPath = '{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/ssi/configurator/'
 const imgWidth = 660
 const clipColors = []
 
@@ -129,14 +129,18 @@ const getColorizeImage = (clipColors) => {
   clipColors.map((hsb, path) => {
     clipEffects.push('select(New,Alpha,' + path + '),colorize(' + hsb + ')')
   })
-  return baseImgPath + productData.name + '&width=' + imgWidth + '&effects=' + clipEffects.join(',')
+  return getEffectImage(clipEffects, imgWidth)
 }
 
 const getThumbImage = (clipPath) => {
   const clipEffects = []
-  for (const area of productData.colorSets) {
-    const hsb = (clipPath === area.clippingPath) ? thumb.on : thumb.off
-    clipEffects.push('select(New,Alpha,' + area.clippingPath + '),colorize(' + hsb + ')')
+  for (const colorSet of productData.colorSets) {
+    const hsb = (clipPath === colorSet.clippingPath) ? thumb.on : thumb.off
+    clipEffects.push('select(New,Alpha,' + colorSet.clippingPath + '),colorize(' + hsb + ')')
   }
-  return baseImgPath + productData.name + '&width=' + thumb.width + '&effects=' + clipEffects.join(',')
+  return getEffectImage(clipEffects, thumb.width)
+}
+
+const getEffectImage = (clipEffects, width) => {
+  return baseImgPath + productData.name + '&width=' + width + '&effects=' + clipEffects.join(',')
 }
