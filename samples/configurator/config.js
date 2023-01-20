@@ -1,94 +1,80 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-  addElements()
-  colorizeImage()
+document.addEventListener('DOMContentLoaded', () => {
+  generateSelector()
+  document.getElementById('image').src = getColorizeImage(clipColors)
 })
 
 const baseImgPath = '{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/configurator/'
-const imgName = 'config-shoe.tif'
 const imgWidth = 660
 const clipColors = []
 
-const colors = {
-  cream: {name: 'Cream', rgb: '251,217,193', hsb: '26,90,55'},
-  coffee: {name: 'Coffee', rgb: '150,115,106', hsb: '11,17,0'},
-  salmon: {name: 'Salmon', rgb: '227,134,126', hsb: '4,66,10'},
-  orange: {name: 'Orange', rgb: '253,106,75', hsb: '10,100,0'},
-  berry: {name: 'Berry', rgb: '252,118,159', hsb: '342,98,17'},
-  mauve: {name: 'Mauve', rgb: '185,202,249', hsb: '227,90,55'},
-  purple: {name: 'Purple', rgb: '143,146,243', hsb: '238,83,0'},
-  blue: {name: 'Blue', rgb: '63,173,252', hsb: '205,100,0'},
-  fresh: {name: 'Fresh', rgb: '96,233,203', hsb: '167,83,0'},
-  lime: {name: 'Lime', rgb: '110,245,92', hsb: '114,83,0'},
-  sun: {name: 'Sun', rgb: '248,233,115', hsb: '55,68,13'},
+const thumb = {
+  width: 126, on: "0,100,0", off: "0,0,80"
 }
 
-const colorSets = [{
-  desc: 'Back',
-  img: {
-    src: 'leather-upper.png', height: 44,
+const productData = {
+  name: 'config-shoe.tif', colors: {
+    cream: {name: 'Cream', rgb: '251,217,193', hsb: '26,90,55'},
+    coffee: {name: 'Coffee', rgb: '150,115,106', hsb: '11,17,0'},
+    salmon: {name: 'Salmon', rgb: '227,134,126', hsb: '4,66,10'},
+    orange: {name: 'Orange', rgb: '253,106,75', hsb: '10,100,0'},
+    berry: {name: 'Berry', rgb: '252,118,159', hsb: '342,98,17'},
+    mauve: {name: 'Mauve', rgb: '185,202,249', hsb: '227,90,55'},
+    purple: {name: 'Purple', rgb: '143,146,243', hsb: '238,83,0'},
+    blue: {name: 'Blue', rgb: '63,173,252', hsb: '205,100,0'},
+    fresh: {name: 'Fresh', rgb: '96,233,203', hsb: '167,83,0'},
+    lime: {name: 'Lime', rgb: '110,245,92', hsb: '114,83,0'},
+    sun: {name: 'Sun', rgb: '248,233,115', hsb: '55,68,13'},
   },
-  clippingPath: 1,
-  selected: colors.blue,
-  colors: [colors.cream, colors.coffee, colors.salmon, colors.orange, colors.berry, colors.mauve, colors.purple, colors.blue, colors.fresh, colors.lime, colors.sun,],
-}, {
-  desc: 'Suede',
-  img: {
-    src: 'leather-upper1.png', height: 44,
-  },
-  clippingPath: 2,
-  selected: colors.blue,
-  colors: [colors.coffee, colors.salmon, colors.berry, colors.mauve, colors.blue, colors.sun,],
-}, {
-  desc: 'Finish',
-  img: {
-    src: 'suede-upper.png', height: 44,
-  },
-  clippingPath: 3,
-  selected: colors.orange,
-  colors: [colors.coffee, colors.salmon, colors.orange, colors.berry, colors.mauve, colors.blue, colors.fresh, colors.lime],
-}, {
-  desc: ' Velvet',
-  img: {
-    src: 'highlight.png', height: 44,
-  },
-  clippingPath: 4,
-  selected: colors.blue,
-  colors: [colors.cream, colors.coffee, colors.salmon, colors.berry, colors.mauve, colors.blue, colors.fresh, colors.sun,],
-}, {
-  desc: ' Side',
-  img: {
-    src: 'highlight1.png', height: 44,
-  },
-  clippingPath: 5,
-  selected: colors.orange,
-  colors: [colors.cream, colors.coffee, colors.salmon, colors.orange, colors.berry, colors.mauve, colors.purple, colors.blue, colors.fresh, colors.lime, colors.sun],
-},]
+  colorSets: [{
+    desc: 'Back',
+    clippingPath: 1,
+    selected: 'blue',
+    colors: ['cream', 'coffee', 'salmon', 'orange', 'berry', 'mauve', 'purple', 'blue', 'fresh', 'lime', 'sun'],
+  }, {
+    desc: 'Suede', clippingPath: 2, selected: 'blue', colors: ['coffee', 'salmon', 'berry', 'mauve', 'blue', 'sun'],
+  }, {
+    desc: 'Finish',
+    clippingPath: 3,
+    selected: 'orange',
+    colors: ['coffee', 'salmon', 'orange', 'berry', 'mauve', 'blue', 'fresh', 'lime'],
+  }, {
+    desc: ' Velvet',
+    clippingPath: 4,
+    selected: 'blue',
+    colors: ['cream', 'coffee', 'salmon', 'berry', 'mauve', 'blue', 'fresh', 'sun'],
+  }, {
+    desc: ' Side',
+    clippingPath: 5,
+    selected: 'orange',
+    colors: ['cream', 'coffee', 'salmon', 'orange', 'berry', 'mauve', 'purple', 'blue', 'fresh', 'lime', 'sun'],
+  },]
+}
 
-const addElements = () => {
+const generateSelector = () => {
   const colorSelector = document.getElementById('colorSelector')
 
-  for (const area of colorSets) {
+  for (const colorSet of productData.colorSets) {
     const selectorEl = document.createElement('div')
     selectorEl.className = 'row'
 
     const headlineCntEl = document.createElement('div')
-    headlineCntEl.className = 'col-3 pb-3'
+    headlineCntEl.className = 'col-12 col-lg-3 pb-3 text-center'
     selectorEl.appendChild(headlineCntEl)
 
     const headlineImgEl = document.createElement('img')
+    headlineImgEl.className = 'shadow-sm'
     headlineImgEl.setAttribute('alt', '')
-    headlineImgEl.setAttribute('height', area.img.height)
-    headlineImgEl.setAttribute('src', baseImgPath + area.img.src + '&height=' + area.img.height)
+    headlineImgEl.setAttribute('width', thumb.width)
+    headlineImgEl.setAttribute('src', getThumbImage(colorSet.clippingPath))
     headlineCntEl.appendChild(headlineImgEl)
 
     const headlineTxtEl = document.createElement('h1')
     headlineTxtEl.className = 'display-6'
-    headlineTxtEl.innerText = area.desc
+    headlineTxtEl.innerText = colorSet.desc
     headlineCntEl.appendChild(headlineTxtEl)
 
-    // <div aria-label='Leather 2 Upper Buttons' class='btn-group pb-3' id='leather2' role='group'>
     const colorsEl = document.createElement('div')
-    colorsEl.className = 'col-9 btn-group pb-3'
+    colorsEl.className = 'col-12 col-lg-9 btn-group pb-3'
     colorsEl.setAttribute('role', 'group')
     selectorEl.appendChild(colorsEl)
 
@@ -96,7 +82,8 @@ const addElements = () => {
     colorsElSub.className = 'container-fluid'
     colorsEl.appendChild(colorsElSub)
 
-    for (const color of area.colors) {
+    for (const colorKey of colorSet.colors) {
+      const color = productData.colors[colorKey]
       const colorWrapEl = document.createElement('div')
       colorWrapEl.className = 'd-inline-flex position-relative'
 
@@ -106,16 +93,17 @@ const addElements = () => {
       colorWrapEl.appendChild(labelNameEl)
 
       const radioEl = document.createElement('input')
-      radioEl.id = 'btn-' + area.clippingPath + '-' + color.name
+      radioEl.id = 'btn-' + colorSet.clippingPath + '-' + color.name
       radioEl.setAttribute('type', 'radio')
-      radioEl.name = 'radio-grp-' + area.clippingPath
+      radioEl.name = 'radio-grp-' + colorSet.clippingPath
       radioEl.className = 'btn-check'
-      if (area.selected === color) {
+      if (colorSet.selected === colorKey) {
         radioEl.checked = true
-        clipColors[area.clippingPath] = color.hsb
+        clipColors[colorSet.clippingPath] = color.hsb
       }
       radioEl.addEventListener('click', () => {
-        colorizeImage(area.clippingPath, color.hsb)
+        clipColors[colorSet.clippingPath] = color.hsb
+        document.getElementById('image').src = getColorizeImage(clipColors)
       })
       colorWrapEl.appendChild(radioEl)
 
@@ -134,23 +122,21 @@ const addElements = () => {
     dividerEl.className = 'mt-1 mb-5'
     colorSelector.appendChild(dividerEl)
   }
-
 }
 
-const colorizeImage = (clippingPath, hsbStr) => {
-  let imgEl = document.getElementById('image')
-
-  if (clippingPath && hsbStr) {
-    clipColors[clippingPath] = hsbStr
-  }
-
-  let imgSrc = baseImgPath + imgName + '&width=' + imgWidth
-
+const getColorizeImage = (clipColors) => {
   const clipEffects = []
-  clipColors.map((hsbStr, path) => {
-    clipEffects.push('select(New,Alpha,' + path + '),colorize(' + hsbStr + ')')
+  clipColors.map((hsb, path) => {
+    clipEffects.push('select(New,Alpha,' + path + '),colorize(' + hsb + ')')
   })
-  imgSrc += '&effects=' + clipEffects.join(',')
+  return baseImgPath + productData.name + '&width=' + imgWidth + '&effects=' + clipEffects.join(',')
+}
 
-  imgEl.src = imgSrc
+const getThumbImage = (clipPath) => {
+  const clipEffects = []
+  for (const area of productData.colorSets) {
+    const hsb = (clipPath === area.clippingPath) ? thumb.on : thumb.off
+    clipEffects.push('select(New,Alpha,' + area.clippingPath + '),colorize(' + hsb + ')')
+  }
+  return baseImgPath + productData.name + '&width=' + thumb.width + '&effects=' + clipEffects.join(',')
 }
