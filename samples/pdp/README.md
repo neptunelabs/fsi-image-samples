@@ -1,12 +1,11 @@
 # Product Detail Page - Embedding images using Single Source Imaging
 
-This readme describes how the product detail page sample with *Single Source Imaging* of *FSI Server* is achieved.
-The aim of the demo is to show how you can easily integrate different sizes and formats of an image by simply changing the Image URL.
-It also shows how static assets saved on FSI Server can be embedded.
+This readme describes how the product detail page example is achieved using *Single Source Imaging* from *FSI Server*.
+The aim of the demo is to show how you can easily integrate different sizes and formats of an image by simply changing the image URL.
 
 # Switching images on the website
 
-The images are switched by adding a simple changeImage function to the image tags:
+The images are swapped by adding a simple changeImage function to the image tags:
 
 ```html
   <div class="row pb-3">
