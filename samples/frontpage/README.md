@@ -28,11 +28,11 @@ You can change the width and/or height directly in the image tag and the image w
 # Adding overlays (Sale icon)
 
 It's also possible to add overlays to your images, such as the sales icon that appears over some of the
-over some of the images in the Featured Products section.
+over some images in the Featured Products section.
 
 ![Config Image](readme-front-3.png)
 
-You can do this easily in the *Publish to Web* tab. With the *Simple Image* preset selected
+You can do this easily in the *Publish to Web* tab. With the *Simple Image* preset selected,
 select the effects icon in the Source Code toolbar.
 
 ![Config Image](readme-front-4.png)

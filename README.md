@@ -4,7 +4,9 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-image-samples/blob/main/LICENSE)
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+Dynamic Single Source Imaging with FSI Server lets you change your images at any size, at any time - simply by changing the URL.
+All you need is a high-resolution image - FSI Server creates the desired image sizes, cropping and effects in an instant.
+Dynamic Single Source Imaging can be applied to any image on the site.
 
 This repository contains examples on how to use and build your own applications.
 
