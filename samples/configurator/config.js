@@ -8,46 +8,58 @@ const imgWidth = 660
 const clipColors = []
 
 const thumb = {
-  width: 126, on: "0,100,0", off: "0,0,80"
+  width: 126,
+  on: '0,100,0',
+  off: '0,0,80',
 }
 
 const productData = {
-  name: 'config-shoe.tif', colors: {
-    cream: {name: 'Cream', rgb: '251,217,193', hsb: '26,90,55'},
-    coffee: {name: 'Coffee', rgb: '150,115,106', hsb: '11,17,0'},
-    salmon: {name: 'Salmon', rgb: '227,134,126', hsb: '4,66,10'},
-    orange: {name: 'Orange', rgb: '253,106,75', hsb: '10,100,0'},
-    berry: {name: 'Berry', rgb: '252,118,159', hsb: '342,98,17'},
-    mauve: {name: 'Mauve', rgb: '185,202,249', hsb: '227,90,55'},
-    purple: {name: 'Purple', rgb: '143,146,243', hsb: '238,83,0'},
-    blue: {name: 'Blue', rgb: '63,173,252', hsb: '205,100,0'},
-    fresh: {name: 'Fresh', rgb: '96,233,203', hsb: '167,83,0'},
-    lime: {name: 'Lime', rgb: '110,245,92', hsb: '114,83,0'},
-    sun: {name: 'Sun', rgb: '248,233,115', hsb: '55,68,13'},
+  name: 'config-shoe.tif',
+  colors: {
+    cream: { name: 'Cream', rgb: '251,217,193', hsb: '26,90,55' },
+    coffee: { name: 'Coffee', rgb: '150,115,106', hsb: '11,17,0' },
+    salmon: { name: 'Salmon', rgb: '227,134,126', hsb: '4,66,10' },
+    orange: { name: 'Orange', rgb: '253,106,75', hsb: '10,100,0' },
+    berry: { name: 'Berry', rgb: '252,118,159', hsb: '342,98,17' },
+    mauve: { name: 'Mauve', rgb: '185,202,249', hsb: '227,90,55' },
+    purple: { name: 'Purple', rgb: '143,146,243', hsb: '238,83,0' },
+    blue: { name: 'Blue', rgb: '63,173,252', hsb: '205,100,0' },
+    fresh: { name: 'Fresh', rgb: '96,233,203', hsb: '167,83,0' },
+    lime: { name: 'Lime', rgb: '110,245,92', hsb: '114,83,0' },
+    sun: { name: 'Sun', rgb: '248,233,115', hsb: '55,68,13' },
   },
-  colorSets: [{
-    desc: 'Back',
-    clippingPath: 1,
-    selected: 'blue',
-    colors: ['cream', 'coffee', 'salmon', 'orange', 'berry', 'mauve', 'purple', 'blue', 'fresh', 'lime', 'sun'],
-  }, {
-    desc: 'Suede', clippingPath: 2, selected: 'blue', colors: ['coffee', 'salmon', 'berry', 'mauve', 'blue', 'sun'],
-  }, {
-    desc: 'Finish',
-    clippingPath: 3,
-    selected: 'orange',
-    colors: ['coffee', 'salmon', 'orange', 'berry', 'mauve', 'blue', 'fresh', 'lime'],
-  }, {
-    desc: ' Velvet',
-    clippingPath: 4,
-    selected: 'blue',
-    colors: ['cream', 'coffee', 'salmon', 'berry', 'mauve', 'blue', 'fresh', 'sun'],
-  }, {
-    desc: ' Side',
-    clippingPath: 5,
-    selected: 'orange',
-    colors: ['cream', 'coffee', 'salmon', 'orange', 'berry', 'mauve', 'purple', 'blue', 'fresh', 'lime', 'sun'],
-  },]
+  colorSets: [
+    {
+      desc: 'Back',
+      clippingPath: 1,
+      selected: 'blue',
+      colors: ['cream', 'coffee', 'salmon', 'orange', 'berry', 'mauve', 'purple', 'blue', 'fresh', 'lime', 'sun'],
+    },
+    {
+      desc: 'Suede',
+      clippingPath: 2,
+      selected: 'blue',
+      colors: ['coffee', 'salmon', 'berry', 'mauve', 'blue', 'sun'],
+    },
+    {
+      desc: 'Finish',
+      clippingPath: 3,
+      selected: 'orange',
+      colors: ['coffee', 'salmon', 'orange', 'berry', 'mauve', 'blue', 'fresh', 'lime'],
+    },
+    {
+      desc: ' Velvet',
+      clippingPath: 4,
+      selected: 'blue',
+      colors: ['cream', 'coffee', 'salmon', 'berry', 'mauve', 'blue', 'fresh', 'sun'],
+    },
+    {
+      desc: ' Side',
+      clippingPath: 5,
+      selected: 'orange',
+      colors: ['cream', 'coffee', 'salmon', 'orange', 'berry', 'mauve', 'purple', 'blue', 'fresh', 'lime', 'sun'],
+    },
+  ],
 }
 
 const generateSelector = () => {
@@ -88,7 +100,8 @@ const generateSelector = () => {
       colorWrapEl.className = 'd-inline-flex position-relative'
 
       const labelNameEl = document.createElement('div')
-      labelNameEl.className = 'opacity-75 badge text-bg-secondary position-absolute top-0 center translate-middle rounded-pill'
+      labelNameEl.className =
+        'opacity-75 badge text-bg-secondary position-absolute top-0 center translate-middle rounded-pill'
       labelNameEl.innerText = color.name
       colorWrapEl.appendChild(labelNameEl)
 
@@ -135,7 +148,7 @@ const getColorizeImage = (clipColors) => {
 const getThumbImage = (clipPath) => {
   const clipEffects = []
   for (const colorSet of productData.colorSets) {
-    const hsb = (clipPath === colorSet.clippingPath) ? thumb.on : thumb.off
+    const hsb = clipPath === colorSet.clippingPath ? thumb.on : thumb.off
     clipEffects.push('select(New,Alpha,' + colorSet.clippingPath + '),colorize(' + hsb + ')')
   }
   return getEffectImage(clipEffects, thumb.width)
