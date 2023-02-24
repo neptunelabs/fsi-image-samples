@@ -2,6 +2,9 @@ overview:
   title: Product Detail Page
   image: logo.png
   description: Shows how a product detail page could look with dynamic imaging used.
+  facts:
+    - Dynamic Single Source Imaging
+    - Combination with srcSets
   order: 3
 sample:
   template:

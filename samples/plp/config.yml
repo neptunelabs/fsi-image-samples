@@ -2,6 +2,10 @@ overview:
   title: Product Listing Page
   image: logo.png
   description: Shows how a product listing page could look with dynamic imaging used.
+  facts:
+    - Dynamic Single Source Imaging
+    - Overlays
+    - Crop Effect
   order: 2
 sample:
   template:

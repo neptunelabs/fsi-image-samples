@@ -2,6 +2,10 @@ overview:
   title: Product Configurator
   image: logo.png
   description: A configurator shows how alpha channels can be used.
+  facts:
+    - Dynamic Single Source Imaging
+    - Alpha Channels
+    - Effect Usage
   order: 5
 sample:
   template:

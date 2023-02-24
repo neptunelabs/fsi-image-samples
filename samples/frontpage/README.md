@@ -1,6 +1,6 @@
 # Frontpage - Embedding images using Single Source Imaging
 
-This readme describes how the front page example is achieved using *Single Source Imaging* from *FSI Server*.
+This readme describes how the front page example is achieved using _Single Source Imaging_ from _FSI Server_.
 The aim of the demo is to show how you can easily integrate different sizes and formats of an image by simply changing the image URL.
 We use Bootstrap for building our page.
 The demo also shows how static assets stored on FSI Server can be embedded.
@@ -8,7 +8,7 @@ The demo also shows how static assets stored on FSI Server can be embedded.
 # Use images on the website
 
 When an image or folder is selected, you can see all the possible publishing options for that item by going to the Publish To Web tab.
-For this example, select the *Simple Image* preset:
+For this example, select the _Simple Image_ preset:
 
 ![Config Image](readme-front-1.png)
 
@@ -21,8 +21,14 @@ This section also displays the source code for your chosen publishing option, wh
 You can then add the images to your site using image tags:
 
 ```html
- <img class="card-img-top img-fluid" src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-boFO5uIUKUU-unsplash.jpg&width=283" alt="" width="283">
+<img
+  class="card-img-top img-fluid"
+  src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-boFO5uIUKUU-unsplash.jpg&width=283"
+  alt=""
+  width="283"
+/>
 ```
+
 You can change the width and/or height directly in the image tag and the image will be scaled accordingly.
 
 # Adding overlays (Sale icon)
@@ -32,12 +38,12 @@ over some images in the Featured Products section.
 
 ![Config Image](readme-front-3.png)
 
-You can do this easily in the *Publish to Web* tab. With the *Simple Image* preset selected,
+You can do this easily in the _Publish to Web_ tab. With the _Simple Image_ preset selected,
 select the effects icon in the Source Code toolbar.
 
 ![Config Image](readme-front-4.png)
 
-In the Modal, drag and drop the *Overlays* effect onto the image.
+In the Modal, drag and drop the _Overlays_ effect onto the image.
 Select the image path where your overlay is stored on FSI Server. You can then change the opacity, position and offset of the overlay.
 changes directly in the Preview Window.
 Select OK when you are finished.
@@ -46,24 +52,23 @@ Select OK when you are finished.
 
 The URL created will look like this:
 
-
-[https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=283&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)](https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=283&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0))
-
+[https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=283&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)](<https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=283&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)>)
 
 # Adding static assets
 
 You can also add static assets such as SVG or video via FSI Server. In our example, the furniture SVG logo is uploaded via the
 FSI Server.
 
-To do this, assets must be uploaded to an appropriate *static* source connector.
+To do this, assets must be uploaded to an appropriate _static_ source connector.
 You will then see the asset's URL in the Metadata tab.
 Simply add this URL to your website:
 
 SVG:
+
 ```html
-<img src="//docs.neptunelabs.com/fsi/static/assets/samples/ssi/logo-furniture-gre.svg" height="24">
+<img src="//docs.neptunelabs.com/fsi/static/assets/samples/ssi/logo-furniture-gre.svg" height="24" />
 ```
 
-## Testing with examples from  your own server
+## Testing with examples from your own server
 
 To test the examples with images from your own [FSI Server](https://www.neptunelabs.com/fsi-server/), please first copy the env.yml.dist file to env.yml and adapt the file, then restart the main demo again.
