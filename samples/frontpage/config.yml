@@ -1,7 +1,7 @@
 overview:
   title: Website Frontpage
   image: logo.png
-  description: Shows how a frontpage could look with dynamic imaging and static assets from FSI Server.
+  description: Shows how a frontpage with dynamic imaging and static assets from FSI Server looks.
   facts:
     - Dynamic Single Source Imaging
     - Static Assets

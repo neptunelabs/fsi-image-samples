@@ -1,7 +1,7 @@
 overview:
   title: Product Listing Page
   image: logo.png
-  description: Shows how a product listing page could look with dynamic imaging used.
+  description: Shows how a product listing page with dynamic imaging used looks.
   facts:
     - Dynamic Single Source Imaging
     - Overlays

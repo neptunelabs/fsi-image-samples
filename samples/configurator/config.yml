@@ -1,7 +1,7 @@
 overview:
   title: Product Configurator
   image: logo.png
-  description: A configurator shows how alpha channels can be used.
+  description: This configurator shows how alpha channels are used.
   facts:
     - Dynamic Single Source Imaging
     - Alpha Channels
