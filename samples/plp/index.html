@@ -1,98 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <title>Simple FSI Image Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href='plp.css' type="text/css"/>
-  <script src='plp.js'></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@{{dependencies.bootstrapIcons}}/font/bootstrap-icons.css">
-</head>
-<body class="bg-light">
-
-<header class="site-header sticky-top py-1">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
-      <img src="{{{fsi.server}}}/{{{fsi.context}}}/static/assets/samples/ssi/logo-furniture-gre.svg" height="24">
-    </a>
-    <a class="p-6 d-none d-md-inline-block" href="#">SHOP</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">COLLECTION</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">BLOG</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">CONTACT</a>
-    <a class="p-6 d-none d-md-inline-block" href="#">CART</a>
-  </nav>
-</header>
-
-<div class="position-relative text-center">
-  <img class="img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/tv-cabinet-6185020.jpg&width=1903&rect=0.08146,0.53855,0.85105,0.21963" width="1903"
-       srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/tv-cabinet-6185020.jpg&width=1903&rect=0.08146,0.53855,0.85105,0.21963,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/tv-cabinet-6185020.jpg&width=1903&rect=0.08146,0.53855,0.85105,0.21963 2x"
-       alt=""></div>
-
-<main class="content mx-auto">
-
-
-  <div class="d-md-flex bg-light flex-md-equal w-100 py-3 mx-auto text-center overflow-hidden">
-    <h2 class="display-5">Organization (11 products)</h2>
+<fsi-touchzoom style="display: none" useDevicePixelRatio="true" enableByCSSClass="zoom" debug="true"></fsi-touchzoom>
+<div class="container">
+  <div class="py-3 text-center overflow-hidden">
+    <h2 class="display-5 mx-auto">Organization (11 products)</h2>
   </div>
 
-  <div class="d-md-flex bg-light flex-md-equal w-100 py-3 px-5 mx-auto">
-    <div class="row">
-      <div class="col justify-content-start">
-        <p>
-          <a class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Filter Color</a>
-          <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Filter Wood Type</button>
-        </p>
-        <div class="row justify-content-star">
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexChecked1" checked>
-                  <label class="form-check-label" for="flexChecked1">
-                    Natural
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexChecked2" checked>
-                  <label class="form-check-label" for="flexChecked2">
-                    Charcoal
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample2">
-              <div class="card card-body">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheck1" checked>
-                  <label class="form-check-label" for="flexCheck1">
-                    Oak
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheck2" checked>
-                  <label class="form-check-label" for="flexCheck2">
-                    Pine
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheck3" checked>
-                  <label class="form-check-label" for="flexCheck3">
-                    Mango
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div class="d-md-flex py-3 mx-auto">
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col pb-1">
+        <div class="dropdown">
+          <button
+            class="btn btn-sm btn-outline-dark dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Wood Type
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">Oak</a></li>
+            <li><a class="dropdown-item" href="#">Pine</a></li>
+            <li><a class="dropdown-item" href="#">Mango</a></li>
+          </ul>
         </div>
       </div>
-      <div class="col">
-        <div class="dropdown d-flex justify-content-end">
-          <button class="btn dropdown-toggle btn-sm btn-outline-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="col pb-1">
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle btn-sm btn-outline-dark"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             Sort By
           </button>
           <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
@@ -104,22 +44,26 @@
       </div>
     </div>
   </div>
-  </div>
 
-
-  <div class="row bg-light row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 px-5 py-3 w-100">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 py-3">
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342&rect=0.30008,0,0.69992,1" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342&rect=0.30008,0,0.69992,1,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=684&rect=0.30008,0,0.69992,1 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342&rect=0.30008,0,0.69992,1"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342&rect=0.30008,0,0.69992,1,
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=684&rect=0.30008,0,0.69992,1 2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Emma</div>
           <p class="product-text">Shelving Unit, Natural Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
             <small class="text-muted">$169</small>
           </div>
@@ -127,35 +71,47 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531461_1920.jpg&width=342&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531461_1920.jpg&width=342&&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531461_1920.jpg&width=684&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531461_1920.jpg&width=342&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531461_1920.jpg&width=342&&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531461_1920.jpg&width=684&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)  2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Albion</div>
-          <p class="product-text">Sideboard, Pine Wood</p>
+          <p class="product-text">Wine Sideboard, Pine Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
-            <small class="text-muted"><s>$499</s> $399</small>
+            <small class="text-muted"><s>$449</s> $399</small>
           </div>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7567164.jpg&width=342&rect=0.03154,0.06192,0.93808,0.93808" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7567164.jpg&width=342&rect=0.03154,0.06192,0.93808,0.93808,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7567164.jpg&width=684&rect=0.03154,0.06192,0.93808,0.93808 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7567164.jpg&width=342&rect=0.03154,0.06192,0.93808,0.93808"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7567164.jpg&width=342&rect=0.03154,0.06192,0.93808,0.93808,
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7567164.jpg&width=684&rect=0.03154,0.06192,0.93808,0.93808 2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Maral</div>
           <p class="product-text">Shelving Unit, Pine Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
             <small class="text-muted">$599</small>
           </div>
@@ -163,17 +119,23 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/interior-design-6012873.jpg&width=3428&rect=0,0.3014,1,0.66706" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/interior-design-6012873.jpg&width=3428&rect=0,0.3014,1,0.66706,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/interior-design-6012873.jpg&width=684&rect=0,0.3014,1,0.66706 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/interior-design-6012873.jpg&width=3428&rect=0,0.3014,1,0.66706"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/interior-design-6012873.jpg&width=3428&rect=0,0.3014,1,0.66706,
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/interior-design-6012873.jpg&width=684&rect=0,0.3014,1,0.66706  2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Abbey</div>
-          <p class="product-text">Desk, Laquered Wood</p>
+          <p class="product-text">Computer Desk, Laquered Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
             <small class="text-muted">$649</small>
           </div>
@@ -182,37 +144,49 @@
     </div>
   </div>
 
-  <div class="row bg-light row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 px-5 py-3 w-100">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 py-3">
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7547558.jpg&width=342&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7547558.jpg&width=342&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7547558.jpg&width=684&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7547558.jpg&width=342&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7547558.jpg&width=342&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7547558.jpg&width=684&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Harlow</div>
           <p class="product-text">Bedside Table, Pine Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
-            <small class="text-muted"><s>$649</s> $549</small>
+            <small class="text-muted"><s>$69</s> $59</small>
           </div>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7225005.jpg&width=3428&rect=0.00131,0.00117,0.56176,0.99883" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7225005.jpg&width=3428&rect=0.00131,0.00117,0.56176,0.99883,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7225005.jpg&width=684&rect=0.00131,0.00117,0.56176,0.99883 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7225005.jpg&width=3428&rect=0.00131,0.00117,0.56176,0.99883"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7225005.jpg&width=3428&rect=0.00131,0.00117,0.56176,0.99883,
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/living-room-7225005.jpg&width=684&rect=0.00131,0.00117,0.56176,0.99883  2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Hopper</div>
           <p class="product-text">Shelving Unit, Oak Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
             <small class="text-muted">$349</small>
           </div>
@@ -220,34 +194,47 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531469.jpg&width=342" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531469.jpg&width=342,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531469.jpg&width=684 2x"
-             alt=""><div class="card-body">
-        <div class="col-6 product-heading">Maddy</div>
-        <p class="product-text">Coffee Table, Pine Wood</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531469.jpg&width=342"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531469.jpg&width=342,
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531469.jpg&width=684 2x
+          "
+          alt=""
+        />
+        <div class="card-body">
+          <div class="col-6 product-heading">Maddy</div>
+          <p class="product-text">Coffee Table, Pine Wood</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
+            </div>
+            <small class="text-muted">$599</small>
           </div>
-          <small class="text-muted">$599</small>
         </div>
-      </div>
       </div>
     </div>
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7473734.jpg&width=342" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7473734.jpg&width=342,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7473734.jpg&width=684 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7473734.jpg&width=342"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7473734.jpg&width=342,
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7473734.jpg&width=684 2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Murcia</div>
           <p class="product-text">Kitchen Organizer, Natural Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
             <small class="text-muted">$599</small>
           </div>
@@ -255,22 +242,26 @@
       </div>
     </div>
   </div>
-  </div>
-  </div>
 
-  <div class="row bg-light row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 px-5 py-3 w-100">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 py-3">
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/dresser-6717656.jpg&width=342&rect=0,0.01636,0.73006,0.97313" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/dresser-6717656.jpg&width=342&rect=0,0.01636,0.73006,0.97313,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/dresser-6717656.jpg&width=684&rect=0,0.01636,0.73006,0.97313 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/dresser-6717656.jpg&width=342&rect=0,0.01636,0.73006,0.97313"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/dresser-6717656.jpg&width=342&rect=0,0.01636,0.73006,0.97313,
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/dresser-6717656.jpg&width=684&rect=0,0.01636,0.73006,0.97313 2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Finn</div>
           <p class="product-text">Shelving Unit, Oak Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
             <small class="text-muted">$349</small>
           </div>
@@ -278,17 +269,23 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531451.jpg&width=342&rect=0.11799,0.0771,0.88084,0.88084" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531451.jpg&width=342&rect=0.11799,0.0771,0.88084,0.88084,
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531451.jpg&width=684&rect=0.11799,0.0771,0.88084,0.88084 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531451.jpg&width=342&rect=0.11799,0.0771,0.88084,0.88084"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531451.jpg&width=342&rect=0.11799,0.0771,0.88084,0.88084,
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-7531451.jpg&width=684&rect=0.11799,0.0771,0.88084,0.88084 2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Naomi</div>
           <p class="product-text">Storage Cabinet, Oak Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
             <small class="text-muted">$649</small>
           </div>
@@ -296,32 +293,33 @@
       </div>
     </div>
     <div class="col">
-      <div class="card">
-        <img class="card-img-top img-fluid" src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-2082923.jpg&width=342&rect=0,0.21846,1,0.74416&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)" width="342"
-             srcset="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-2082923.jpg&width=342&rect=0,0.21846,1,0.74416&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
-{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-2082923.jpg&width=684&rect=0,0.21846,1,0.74416&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x"
-             alt="">
+      <div class="card h-100">
+        <img
+          class="zoom card-img-top img-fluid"
+          src="{{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-2082923.jpg&width=342&rect=0,0.21846,1,0.74416&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)"
+          width="342"
+          srcset="
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-2082923.jpg&width=342&rect=0,0.21846,1,0.74416&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0),
+            {{{fsi.server}}}/{{{fsi.context}}}/server?type=image&source=images/samples/ssi/furniture/home-2082923.jpg&width=684&rect=0,0.21846,1,0.74416&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0) 2x
+          "
+          alt=""
+        />
         <div class="card-body">
           <div class="col-6 product-heading">Hank</div>
-          <p class="product-text">Cupboard, Pine Wood</p>
+          <p class="product-text">Industrial Cupboard, Pine Wood</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              <button type="button" class="btn btn-sm btn-outline-dark">View</button>
             </div>
-            <small class="text-muted"><s>$649</s> $549</small>
+            <small class="text-muted"><s>$699</s> $549</small>
           </div>
         </div>
       </div>
     </div>
-    <div class="col">
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
+    <div class="col"></div>
   </div>
 
-  <div class="d-md-flex bg-light flex-md-equal w-100 py-3 mx-auto text-center overflow-hidden">
+  <div class="justify-content-center overflow-hidden">
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
         <li class="page-item">
@@ -342,49 +340,4 @@
       </ul>
     </nav>
   </div>
-
-</main>
-
-<footer class="py-5 footer w-100 overflow-hidden">
-  <div class="container py-5">
-    <div class="row ">
-      <div class="col-lg-3 mb-3">
-        <h4>Example Company</h4>
-        <ul class="list-unstyled small text-muted">
-          <li class="mb-2">Designed based on the <a class="link-secondary" href="https://getbootstrap.com/docs/5.0/examples/">Bootstrap examples</a>. Implemented to show various samples on how to use <a class="link-secondary" href="https://www.neptunelabs.com/fsi-server/">FSI Server</a>.</li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Cool stuff</a></li>
-          <li><a class="link-secondary" href="#">Random feature</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Resource name</a></li>
-          <li><a class="link-secondary" href="#">Another resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Another Resource</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Business</a></li>
-          <li><a class="link-secondary" href="#">Education</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="#">Team</a></li>
-          <li><a class="link-secondary" href="#">Locations</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-</body>
-</html>
+</div>

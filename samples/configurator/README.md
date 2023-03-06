@@ -1,7 +1,6 @@
 # Configurator - Images with Alpha Channels
-
-This readme describes how the configurator sample with *Single Source Imaging* of *FSI Server* is achieved.
-The aim of the demo is to show how Alpha Channels can be adressed by simply changing the Image URL and using Image Effects.
+This readme describes how the configurator example is achieved using *Single Source Imaging* from *FSI Server*.
+The aim of the demo is to show how alpha channels can be addressed by simply changing the image URL and using image effects.
 
 # Adding Alpha Channels to your image
 
@@ -21,160 +20,118 @@ A quick description how to do this in Photoshop:
 
 # Building the configurator
 
-For this sample, we have used Bootstrap in order to create a sample website framework.
+For this example, we have used Bootstrap to create a sample website framework.
+
+All images and colour selectors are built using JS.
 
 The image is embedded like this:
 
 ```html
- <img id="image" class="img-fluid" src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940" width="940" alt="">
-```
-
-For each Alpha Channel (e.g. Leather Upper 1, Suede, etc) there is an area where you can choose
-between different colors.
-We allocated a data-role and a data-value to the color icons:
+   <img alt='' class='img-fluid shadow-sm' id='image' width='940'>
+   ```
+And the colour selectors are implemented as follows:
 
 ```html
-<div id="leather">
-  <span class="position-relative">
-    <i data-role="leatherChange" data-value="26,90,55" class="bi bi-circle-fill icon-cream-round thumb-icon pt-3">
-    </i>
-    <span class="position-absolute translate-middle badge rounded-pill color-badge">
-      Cream
-    </span>
-  </span>
-  <span class="position-relative">
-    <i data-role="leatherChange" data-value="11,17,0" class="bi bi-circle-fill icon-coffee-round thumb-icon pt-3">
-    </i>
-    <span class="position-absolute translate-middle badge rounded-pill color-badge">
-      Coffee
-    </span>
-  </span>
-  <span class="position-relative">
-    <i data-role="leatherChange" data-value="4,66,10" class="bi bi-circle-fill icon-salmon-round thumb-icon pt-3">
-    </i>
-    <span class="position-absolute translate-middle badge rounded-pill color-badge">
-      Salmon
-    </span>
-  </span>
-</div>
+ <div class='pb-1' id='colorSelector'></div>
+   ```
 
-```
-The icons also get a color badge with the second *span* implemented.
+In `config.js' we then build the configurator.
 
-There are five different categories which each have a different data-role:
-
-- Leather Upper 1 -> leatherChange
-- Leather Upper 1 -> leatherTwoChange
-- Suede -> suedeChange
-- Highlight 1 -> highlightChange
-- Highlight 2 -> highlightTwoChange
-
-# Changing the colors
-
-The **config.js** script embedded deals with the changing of the colors:
-
-```html
-<script src="config.js"></script>
-```
-
-First, we set an EventListener as soon as the DOM is loaded:
+First we set an EventListener as soon as the DOM is loaded:
 
 ```javascript
-document.addEventListener('DOMContentLoaded', (event) => {
-  new Configurator()
+document.addEventListener('DOMContentLoaded', () => {
+  generateSelector()
+  document.getElementById('image').src = getColorizeImage(clipColors)
 })
 ```
-
-Then we set the class with *initClick* and define the function:
-
+We set an image base path and define colour sets to add different colours and sections to the image.
 ```javascript
-class Configurator {
-  constructor () {
-    initClick()
-  }
-}
+const baseImgPath = '{{&fsi.server}}/{{&fsi.context}}/server?type=image&source=images/samples/ssi/configurator/'
+const imgWidth = 660
+const clipColors = []
 
-function initClick() {
-  const self = this
-  document.querySelectorAll('[data-role]').forEach(function (el) {
-    el.addEventListener('click', () => {
-      self.changeColor(el)
-    })
-  })
-}
-```
-The function *initClick* uses a query selector, which selects the data-role and adds
-an EventListener to it. If clicked, the function *changeColor* is called:
 
-```javascript
-function changeColor(el) {
-  let img;
-  let curImage = document.getElementById('image');
-  var imgbase = "//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=";
-```
-
-We get the current image with the corresponding ID and set an imagebase.
-
-```javascript
-switch (el.dataset.role) {
-  case 'leatherChange':
-    this.leathervalue = el.dataset.value;
-    break
-  case 'leatherTwoChange':
-    this.leathertwovalue = el.dataset.value;
-    break
-  case 'suedeChange':
-    this.suedevalue = el.dataset.value;
-    break
-  case 'highlightChange':
-    this.highlightvalue = el.dataset.value;
-    break
-  case 'highlightTwoChange':
-    this.highlighttwovalue = el.dataset.value;
-    break
+const productData = {
+name: 'config-shoe.tif', colors: {
+cream: {name: 'Cream', rgb: '251,217,193', hsb: '26,90,55'},
+coffee: {name: 'Coffee', rgb: '150,115,106', hsb: '11,17,0'},
+salmon: {name: 'Salmon', rgb: '227,134,126', hsb: '4,66,10'},
+orange: {name: 'Orange', rgb: '253,106,75', hsb: '10,100,0'},
+berry: {name: 'Berry', rgb: '252,118,159', hsb: '342,98,17'},
+mauve: {name: 'Mauve', rgb: '185,202,249', hsb: '227,90,55'},
+purple: {name: 'Purple', rgb: '143,146,243', hsb: '238,83,0'},
+blue: {name: 'Blue', rgb: '63,173,252', hsb: '205,100,0'},
+fresh: {name: 'Fresh', rgb: '96,233,203', hsb: '167,83,0'},
+lime: {name: 'Lime', rgb: '110,245,92', hsb: '114,83,0'},
+sun: {name: 'Sun', rgb: '248,233,115', hsb: '55,68,13'},
+},
+colorSets: [{
+desc: 'Back',
+clippingPath: 1,
+selected: 'blue',
+colors: ['cream', 'coffee', 'salmon', 'orange', 'berry', 'mauve', 'purple', 'blue', 'fresh', 'lime', 'sun'],
+}, {
+desc: 'Suede', clippingPath: 2, selected: 'blue', colors: ['coffee', 'salmon', 'berry', 'mauve', 'blue', 'sun'],
+}, {
+desc: 'Finish',
+clippingPath: 3,
+selected: 'orange',
+colors: ['coffee', 'salmon', 'orange', 'berry', 'mauve', 'blue', 'fresh', 'lime'],
+}, {
+desc: ' Velvet',
+clippingPath: 4,
+selected: 'blue',
+colors: ['cream', 'coffee', 'salmon', 'berry', 'mauve', 'blue', 'fresh', 'sun'],
+}, {
+desc: ' Side',
+clippingPath: 5,
+selected: 'orange',
+colors: ['cream', 'coffee', 'salmon', 'orange', 'berry', 'mauve', 'purple', 'blue', 'fresh', 'lime', 'sun'],
+},]
 }
 ```
 
-The switch defines what happens if a particular data-role is clicked. This way, the five
-different values are set.
+The image is built by adding the image base, the effect itself (select(New,Alpha,1),colorize(colour)) and the associated values retrieved from the colour selector.
+The current image is then replaced with the newly created image.
 
 ```javascript
-  img = imgbase + 'select(New,Alpha,1),colorize(' + this.leathervalue + '),select(New,Alpha,2),colorize(' + this.suedevalue + '),select(New,Alpha,3),colorize(' + this.highlightvalue + '),select(New,Alpha,4),colorize(' + this.leathertwovalue + '),select(New,Alpha,5),colorize(' + this.highlighttwovalue + ')';
-curImage.src = img;
+const getEffectImage = (clipEffects, width) => {
+return baseImgPath + productData.name + '&width=' + width + '&effects=' + clipEffects.join(',')
 }
 ```
 
-The image is now build from adding the imagebase, the effect itself (select(New,Alpha,1),colorize(color)) and the accompanying values retrieved from the switch.
-Then the current image is replaced with the newly built image.
+# Defining the colour values
 
-# Defining the color values
-
-You can use the FSI Server Interface to determine the color values you need:
-Select the image with the Alpha Channels, and got to the Publish tab and choose *Simple Image* from the templates
+You can use the FSI Server Interface to determine the colour values you need:
+Select the image with the alpha channels, go to the Publish tab and select *Simple Image* from the templates on the right.
 on the right.
 
 ![Config Image](readme-config-1.png)
 
-In the *Your Source Code* section, choose the icon for image effects (see above).
+In the *Your Source* section, select the Image Effects icon (see above).
 
-In the modal, go to the *Select* effect and add it via drag and drop to the left.
-Choose as Type of Range *Alpha Channel* and select the Alpha Channel you want to use:
+In the modal, go to the *Select* effect and add it by dragging and dropping it to the left.
+Select *Alpha Channel* as the type of area and choose the alpha channel you want to use:
 
 ![Config Image 2](readme-config-2.png)
 
-Now, add the Colorize Effect to your effect list.
-By changing the Hue, Saturation and Lightness you can instantly see the changes in the
+Now add the Colorize effect to your list of effects.
+By changing the hue, saturation and lightness, you can instantly see the changes in the
 preview window:
 
 ![Config Image 3](readme-config-3.png)
 
-You can add as many selections/colorizations on top as you like.
+You can add as many selections/colours as you like.
 The only thing you need to keep in mind is the correct order:
-first add the Alpha Channel via Select, than add Colorize.
+First add the alpha channel via Select, then add the colourisation.
 
-At the end, your image URL could look something like this:
+At the end, your image URL might look like this:
 
 [https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=select(New,Alpha,1),colorize(4,66,10),select(New,Alpha,2),colorize(0,24,0),select(New,Alpha,3),colorize(10,50,0),select(New,Alpha,4),colorize(11,17,0),select(New,Alpha,5),colorize(10,24,0)](https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=select(New,Alpha,1),colorize(4,66,10),select(New,Alpha,2),colorize(0,24,0),select(New,Alpha,3),colorize(10,50,0),select(New,Alpha,4),colorize(11,17,0),select(New,Alpha,5),colorize(10,24,0))
+
+
+![https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=select(New,Alpha,1),colorize(4,66,10),select(New,Alpha,2),colorize(0,24,0),select(New,Alpha,3),colorize(10,50,0),select(New,Alpha,4),colorize(11,17,0),select(New,Alpha,5),colorize(10,24,0)](https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/configurator/config-shoe.tif&width=940&effects=select(New,Alpha,1),colorize(4,66,10),select(New,Alpha,2),colorize(0,24,0),select(New,Alpha,3),colorize(10,50,0),select(New,Alpha,4),colorize(11,17,0),select(New,Alpha,5),colorize(10,24,0))
 
 
 ## Testing with examples from  your own server

@@ -1,14 +1,35 @@
-title: Product Detail Page
-image: logo.png
-description: Shows how a product detail page could look with dynamic imaging used.
-priority: 3
-jsfiddle:
+overview:
+  title: Product Detail Page
+  image: logo.png
+  description: Shows how a product detail page with dynamic imaging used looks.
+  facts:
+    - Dynamic Single Source Imaging
+    - Combination with srcSets
+  order: 3
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/furniture-menu.yml
+      highlight: DEAL OF THE DAY
+      featured:
+        template: data/furniture-featured.yml
+      footer:
+        credits:
+          photos:
+            author: various artists
+            link: https://pixabay.com/
+            platform: Pixabay
+          viewer:
+            link: https://www.neptunelabs.com/dynamic-imaging/
+      fsi:
+        touchZoom: true
+      bootstrap:
+        icons: false
   mapping:
     html: "index.html"
     css: "pdp.css"
     js: "pdp.js"
-  resources:
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js
-    - https://cdn.jsdelivr.net/npm/bootstrap-icons@{{dependencies.bootstrapIcons}}/font/bootstrap-icons.css
+jsfiddle:
+  deploy: true

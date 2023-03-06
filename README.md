@@ -4,7 +4,9 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-image-samples/blob/main/LICENSE)
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+Dynamic Single Source Imaging with FSI Server lets you change your images at any size, at any time - simply by changing the URL.
+All you need is a high-resolution image - FSI Server creates the desired image sizes, cropping and effects in an instant.
+Dynamic Single Source Imaging can be applied to any image on the site.
 
 This repository contains examples on how to use and build your own applications.
 
@@ -15,18 +17,18 @@ This repository contains examples on how to use and build your own applications.
 Without starting this project in your IDE, you can discover, develop and customize
 all demos in JSFiddle.
 
-[Flowers in JSFiddle][flowjsf]
+[Website Frontpage in JSFiddle][frontjsf]
 
-[Trains in JSFiddle][trainsjsf]
-
-[Kitchen in JSFiddle][kitchenjsf]
+[Product Listing Page in JSFiddle][plpjsf]
 
 [Product Detail Page in JSFiddle][pdpjsf]
 
-[flowjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/flowers
-[kitchenjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/kitchen
-[pdpjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/pdp
-[trainsjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-layers-samples/trains
+[Product Configurator in JSFiddle][confjsf]
+
+[frontjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-image-samples/frontpage
+[plpjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-image-samples/plp
+[pdpjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-image-samples/pdp
+[confjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-image-samples/configurator
 
 ## Start and develop
 

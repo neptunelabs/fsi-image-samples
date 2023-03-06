@@ -1,4 +1,35 @@
-title: Product Configurator
-image: logo.png
-description: A configurator shows how alpha channels can be used.
-priority: 5
+overview:
+  title: Product Configurator
+  image: logo.png
+  description: This configurator shows how alpha channels are used.
+  facts:
+    - Dynamic Single Source Imaging
+    - Alpha Channels
+    - Effect Usage
+  order: 5
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/clothing-menu.yml
+      featured:
+        template: data/clothing-featured.yml
+      footer:
+        credits:
+          photos:
+            - author: Artem Bondarchuk
+              link: https://unsplash.com/@artembondarchuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+              platform: Unsplash
+          viewer:
+            link: https://www.neptunelabs.com/dynamic-imaging/
+      fsi:
+        touchZoom: true
+      bootstrap:
+        icons: true
+  mapping:
+    html: 'index.html'
+    css: 'config.css'
+    js: 'config.js'
+jsfiddle:
+  deploy: true

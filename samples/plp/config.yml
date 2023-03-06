@@ -1,14 +1,37 @@
-title: Product Listing Page
-image: logo.png
-description: Shows how a product listing page could look with dynamic imaging used.
-priority: 2
-jsfiddle:
+overview:
+  title: Product Listing Page
+  image: logo.png
+  description: Shows how a product listing page with dynamic imaging used looks.
+  facts:
+    - Dynamic Single Source Imaging
+    - Overlays
+    - Crop Effect
+  order: 2
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/furniture-menu.yml
+      hero:
+        url: /server?type=image&source=images/samples/ssi/furniture/tv-cabinet-6185020.jpg&width=1903&rect=0.08146,0.53855,0.85105,0.21963
+        height: 30vh
+      categories: true
+      footer:
+        credits:
+          photos:
+            author: various artists
+            link: https://pixabay.com/
+            platform: Pixabay
+          viewer:
+            link: https://www.neptunelabs.com/dynamic-imaging/
+      fsi:
+        touchZoom: true
+      bootstrap:
+        icons: false
   mapping:
     html: "index.html"
     css: "plp.css"
     js: "plp.js"
-  resources:
-    - "{{{fsi.server}}}/{{{fsi.context}}}/{{{fsi.viewer}}}/applications/touchzoom/js/fsitouchzoom.js"
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/css/bootstrap.min.css
-    - https://cdn.jsdelivr.net/npm/bootstrap@{{dependencies.bootstrap}}/dist/js/bootstrap.bundle.min.js
-    - https://cdn.jsdelivr.net/npm/bootstrap-icons@{{dependencies.bootstrapIcons}}/font/bootstrap-icons.css
+jsfiddle:
+  deploy: true
