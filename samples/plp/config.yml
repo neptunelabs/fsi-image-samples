@@ -1,5 +1,5 @@
 overview:
-  title: Product Listing Page
+  title: Product Listing Page (PLP)
   image: logo.png
   description: Shows how a product listing page with dynamic imaging used looks.
   facts:
@@ -31,7 +31,7 @@ sample:
         icons: false
   mapping:
     html: "index.html"
-    css: "plp.css"
-    js: "plp.js"
+    css: "style.css"
+    js: "script.js"
 jsfiddle:
   deploy: true

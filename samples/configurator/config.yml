@@ -29,7 +29,7 @@ sample:
         icons: true
   mapping:
     html: 'index.html'
-    css: 'config.css'
-    js: 'config.js'
+    css: 'style.css'
+    js: 'script.js'
 jsfiddle:
   deploy: true

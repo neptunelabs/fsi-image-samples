@@ -35,7 +35,7 @@ And the colour selectors are implemented as follows:
  <div class='pb-1' id='colorSelector'></div>
    ```
 
-In `config.js' we then build the configurator.
+In `script.js' we then build the configurator.
 
 First we set an EventListener as soon as the DOM is loaded:
 

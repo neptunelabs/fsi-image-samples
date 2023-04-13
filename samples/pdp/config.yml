@@ -1,5 +1,5 @@
 overview:
-  title: Product Detail Page
+  title: Product Detail Page (PDP)
   image: logo.png
   description: Shows how a product detail page with dynamic imaging used looks.
   facts:
@@ -29,7 +29,7 @@ sample:
         icons: false
   mapping:
     html: "index.html"
-    css: "pdp.css"
-    js: "pdp.js"
+    css: "style.css"
+    js: "script.js"
 jsfiddle:
   deploy: true
