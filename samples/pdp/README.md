@@ -33,7 +33,7 @@ docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/nhome
           </div>
 ```
 
-In the corresponding `pdp.js` this function is set:
+In the corresponding `script.js` this function is set:
 
 ```js
 function changeImage(buttonID) {
