@@ -2,11 +2,6 @@ name: Product Configurator
 description: This configurator shows how alpha channels are used.
 authors:
   - NeptuneLabs
-resources:
-  - https://raw.githubusercontent.com/neptunelabs/fsi-image-samples/main/jsfiddle/bootstrap.fsi-samples.1.0.5-dev.min.css
-  - https://raw.githubusercontent.com/neptunelabs/fsi-image-samples/main/jsfiddle/bootstrap.fsi-samples.1.0.5-dev.bundle.js
-  - https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css
-  - https://docs.neptunelabs.com/fsi/viewer/applications/touchzoom/js/fsitouchzoom.js
 normalize_css: 'no'
 wrap: d
 panel_html: 0
