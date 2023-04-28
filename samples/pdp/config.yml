@@ -1,0 +1,35 @@
+overview:
+  title: Product Detail Page (PDP)
+  image: logo.png
+  description: Shows how a product detail page with dynamic imaging used looks.
+  facts:
+    - Dynamic Single Source Imaging
+    - Combination with srcSets
+  order: 3
+sample:
+  template:
+    schema: framework-2023
+    components:
+      menu:
+        template: data/furniture-menu.yml
+      highlight: DEAL OF THE DAY
+      featured:
+        template: data/furniture-featured.yml
+      footer:
+        credits:
+          photos:
+            author: various artists
+            link: https://pixabay.com/
+            platform: Pixabay
+          viewer:
+            link: https://www.neptunelabs.com/dynamic-imaging/
+      fsi:
+        touchZoom: true
+      bootstrap:
+        icons: false
+  mapping:
+    html: "index.html"
+    css: "style.css"
+    js: "script.js"
+jsfiddle:
+  deploy: true
