@@ -25,13 +25,11 @@ sample:
             platform: Pixabay
           viewer:
             link: https://www.neptunelabs.com/dynamic-imaging/
-      fsi:
-        touchZoom: true
       bootstrap:
         icons: false
   mapping:
     html: "index.html"
     css: "style.css"
     js: "script.js"
-jsfiddle:
+playground:
   deploy: true

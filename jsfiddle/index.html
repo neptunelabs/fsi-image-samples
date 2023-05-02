@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flems</title>
+  <meta charset="utf8">
+  <meta name="description"
+        content="Flems is a Playground for web development. Use it for examples, presentations, documentation, issues and what not.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0068B4">
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+<script src="flems.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  const flems = Flems(document.body, {
+    files: [
+      {
+        name: 'app.html',
+        content: 'm.render(document.body, m("h1", "Hello world"))\nconsole.log("Dart")'
+      },
+      {
+      name: 'app.js',
+      content: 'm.render(document.body, m("h1", "Hello world"))\nconsole.log("Dart")'
+    },
+    {
+      name: 'app.css',
+      content: 'body{}'
+    }],
+    links: [{
+      name: 'boostrap.css',
+      type: 'css',
+      url: 'https://raw.githubusercontent.com/neptunelabs/fsi-image-samples/main/jsfiddle/bootstrap.fsi-samples.1.0.5-dev.min.css'
+    },
+      {
+        name: 'boostrap.css',
+        type: 'css',
+        url: 'https://raw.githubusercontent.com/neptunelabs/fsi-image-samples/main/jsfiddle/bootstrap.fsi-samples.1.0.5-dev.bundle.js'
+      }
+    ],
+    middle: 40,
+    selected: 'app.html',
+    xcolor: '#001754'
+  })
+</script>
+</body>
+</html>
