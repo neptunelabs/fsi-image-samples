@@ -1,5 +1,6 @@
 ---
 title: 'FSI Image'
-projectURL: https://www.neptunelabs.com/fsi-layers/
+projectURL: https://www.neptunelabs.com/dynamic-imaging/
 originAssetPath: image
-jsFiddleBase: fsi-image-samples
+playground:
+  stackblitz: fsi-image-samples

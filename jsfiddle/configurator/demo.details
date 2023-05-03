@@ -1,9 +1,0 @@
-name: Product Configurator
-description: This configurator shows how alpha channels are used.
-authors:
-  - NeptuneLabs
-normalize_css: 'no'
-wrap: d
-panel_html: 0
-panel_jsl: 0
-panel_css: 0
