@@ -14,21 +14,11 @@ This repository contains examples on how to use and build your own applications.
 
 ## Getting Started
 
-Without starting this project in your IDE, you can discover, develop and customize
-all demos in JSFiddle.
+Without starting this project in your IDE, you can discover all the
+demos on the [Github Pages][ghpages] or develop and customise in [Stackblitz][stackblitz].
 
-[Website Frontpage in JSFiddle][frontjsf]
-
-[Product Listing Page in JSFiddle][plpjsf]
-
-[Product Detail Page in JSFiddle][pdpjsf]
-
-[Product Configurator in JSFiddle][confjsf]
-
-[frontjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-image-samples/frontpage
-[plpjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-image-samples/plp
-[pdpjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-image-samples/pdp
-[confjsf]: https://jsfiddle.net/gh/get/library/pure/neptunelabs/fsi-jsfiddle-samples/tree/master/fsi-image-samples/configurator
+[ghpages]: https://neptunelabs.github.io/fsi-image-samples/
+[stackblitz]: https://stackblitz.com/edit/fsi-image-samples
 
 ## Start and develop
 
