@@ -1,12 +1,13 @@
 # [FSI Image](https://www.neptunelabs.com) &middot; Samples
+
 | ***Pixel-perfect*** | ***High-DPI-ready*** | ***Fast :rocket:*** | ***Hackable*** | ***Consistent*** |
-|:-----------------:|:-------------:|:---------------:|:---------------:|:---------------:|
+|:-------------------:|:--------------------:|:-------------------:|:--------------:|:----------------:|
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/neptunelabs/fsi-image-samples/blob/main/LICENSE)
 
-Dynamic Single Source Imaging with FSI Server lets you change your images at any size, at any time - simply by changing the URL.
-All you need is a high-resolution image - FSI Server creates the desired image sizes, cropping and effects in an instant.
-Dynamic Single Source Imaging can be applied to any image on the site.
+Dynamic Single Source Imaging with FSI Server lets you change your images at any size, at any time - simply by changing
+the URL. All you need is a high-resolution image - FSI Server creates the desired image sizes, cropping and effects in
+an instant. Dynamic Single Source Imaging can be applied to any image on the site.
 
 This repository contains examples on how to use and build your own applications.
 
@@ -15,10 +16,7 @@ This repository contains examples on how to use and build your own applications.
 ## Getting Started
 
 Without starting this project in your IDE, you can discover all the
-demos on the [Github Pages][ghpages] or develop and customise in [Stackblitz][stackblitz].
-
-[ghpages]: https://neptunelabs.github.io/fsi-image-samples/
-[stackblitz]: https://stackblitz.com/edit/fsi-image-samples
+demos on the [Github Pages][GHPages] or develop and customise in [Stackblitz][Stackblitz].
 
 ## Start and develop
 
@@ -30,6 +28,7 @@ To run and modify this samples:
 npm install
 npm install
 ```
+
 or
 
 #### Yarn
@@ -49,23 +48,44 @@ These examples rely on a framework that uses [Grunt][Grunt], [Browsersync][Brows
 [Bootstrap][Bootstrap] and Sass to launch a local server,
 replace template variables and pass changes directly to the browser window.
 
-However, these dependencies are generally **not required** for the use of FSI Layers!
+However, these dependencies are generally **not required** for the using images with FSI
+Server!
 
-## Requirements
+## Requirements with own images
 
-To run the demo you do not need your own image server.
-If you don't have your own server but still want to use your own images,
-you can use an [evaluation copy][Server] indefinitely.
-In case of an own server, please copy ``env.yml.dist`` to ``env.yml`` and
-change the settings.
+The images are loaded from an image server (FSI server) in dynamic resolution.
+In this demo, images are loaded from an example server.
+For your **own images** with these examples in this repository,
+a separate image server instance is required.
+
+To do this quickly, you can use an [evaluation copy][Server] for an unlimited period
+of time.
+
+The recommended way to quickly start your own instance via Docker is described
+in this [repository][FSIDockerRepo].
+
+If you have your own server, copy ``env.yml.dist`` to ``env.yml`` and change the settings
+according to your FSI server URL.
 
 
 ## Documentation
 
-The official FSI Viewer and FSI Server documentation can be found here: [https://docs.neptunelabs.com/fsi-viewer/][Docs]
+For further information on the FSI Viewer and FSI Server,
+please refer to the official [documentation][Docs].
+
 
 [Docs]: https://docs.neptunelabs.com/fsi-viewer/
+
 [Server]: https://www.neptunelabs.com/get/
+
+[FSIDockerRepo]: https://github.com/neptunelabs/fsi-server-docker-v22
+
 [Grunt]: https://gruntjs.com/
+
 [Browsersync]: https://browsersync.io/
+
 [Bootstrap]: https://getbootstrap.com/
+
+[GHPages]: https://neptunelabs.github.io/fsi-image-samples/
+
+[Stackblitz]: https://stackblitz.com/edit/fsi-image-samples
