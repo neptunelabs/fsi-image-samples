@@ -9,7 +9,6 @@ yarn.lock
 
 node_modules
 dist
-fsi-layers
 .cache
 
 env.yml
