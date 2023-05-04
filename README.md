@@ -54,7 +54,8 @@ Server!
 ## Requirements with own images
 
 The images are loaded from an image server (FSI server) in dynamic resolution.
-In this demo, images are loaded from an example server.
+In addition, depending on the sample, static assets such as JavaScript, CSS or static images may also be required.
+In this demo, images and static assets are loaded from an example server.
 For your **own images** with these examples in this repository,
 a separate image server instance is required.
 
