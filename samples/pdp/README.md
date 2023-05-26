@@ -10,23 +10,23 @@ The images are swapped by adding a simple changeImage function to the image tags
 ```html
   <div class="row pb-3">
             <div class="col-4">
-              <img class="thumbnail img-fluid" onclick="changeImage('0')" src="docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=150" width="150"
-                   srcset="docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=150,
-docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=300 2x"
+              <img class="thumbnail img-fluid" onclick="changeImage('0')" src="fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=150" width="150"
+                   srcset="fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=150,
+fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=300 2x"
                    alt="">
 
             </div>
             <div class="col-4" >
-              <img class="thumbnail img-fluid" onclick="changeImage('1')" src="docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531467.jpg&width=150" width="150"
-                                            srcset="docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531467.jpg&width=150,
-docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531467.jpg&width=300 2x"
+              <img class="thumbnail img-fluid" onclick="changeImage('1')" src="fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531467.jpg&width=150" width="150"
+                                            srcset="fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531467.jpg&width=150,
+fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531467.jpg&width=300 2x"
                                             alt="">
 
             </div>
             <div class="col-4" >
-              <img class="thumbnail img-fluid" onclick="changeImage('2')" src="docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531463.jpg&width=150" width="150"
-                   srcset="docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531463.jpg&width=150,
-docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/nhome-7531463.jpg&width=300 2x"
+              <img class="thumbnail img-fluid" onclick="changeImage('2')" src="fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531463.jpg&width=150" width="150"
+                   srcset="fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531463.jpg&width=150,
+fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/nhome-7531463.jpg&width=300 2x"
                    alt="">
 
             </div>
@@ -41,16 +41,16 @@ function changeImage(buttonID) {
   let curImage = document.getElementById('image')
   switch (buttonID) {
     case '0':
-      img = 'docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=940'
+      img = 'fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=940'
       break
     case '1':
-      img = 'docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531467.jpg&width=940'
+      img = 'fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531467.jpg&width=940'
       break
     case '2':
-      img = 'docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531463.jpg&width=940'
+      img = 'fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531463.jpg&width=940'
       break
     default:
-      img = 'docs.neptunelabs.com/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=940'
+      img = 'fsi.domain.tld/server?type=image&source=images/samples/ssi/furniture/home-7531464.jpg&width=940'
   }
   curImage.src = img
 }
