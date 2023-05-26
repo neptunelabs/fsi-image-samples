@@ -11,7 +11,7 @@ After uploading the images to the FSI Server, add the images to your site using 
 ```html
 <img
   class="card-img-top img-fluid"
-  src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342"
+  src="//fsi.domain.tld/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342"
   alt=""
   width="342"
 />
@@ -27,8 +27,8 @@ You can also use srcSets with the image tag:
   src="https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342&rect=0.30008,0,0.69992,1"
   width="342"
   srcset="
-    https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342&rect=0.30008,0,0.69992,1,
-    https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=684&rect=0.30008,0,0.69992,1 2x
+    https://fsi.domain.tld/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342&rect=0.30008,0,0.69992,1,
+    https://fsi.domain.tld/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=684&rect=0.30008,0,0.69992,1 2x
   "
   alt=""
 />
@@ -41,7 +41,7 @@ As you can see in the image tag above, a crop effect has been used:
 ```html
 <img
   class="zoom card-img-top img-fluid"
-  src="https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342&rect=0.30008,0,0.69992,1"
+  src="https://fsi.domain.tld/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=342&rect=0.30008,0,0.69992,1"
   width="342"
   alt=""
 />
@@ -61,7 +61,7 @@ Select OK when you are finished.
 
 The URL created will look like this:
 
-[https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=480&rect=0.15187,0,0.84813,1](https://docs.neptunelabs.comp/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-o4s4AfTgOvg-unsplash.jpg&width=480&rect=0.15187,0,0.84813,1)
+[https://fsi.domain.tld/fsi/server?type=image&source=images/samples/ssi/furniture/sample.jpg&width=480&rect=0.15187,0,0.84813,1](https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=480&rect=0.15187,0,0.84813,1)
 
 The _&rect=_ part defines the area of the cropping.
 

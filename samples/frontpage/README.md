@@ -12,7 +12,11 @@ For this example, select the _Simple Image_ preset:
 
 ![Config Image](readme-front-1.png)
 
-Simple Image publishes the image with a simple <img> tag. Requires a single high resolution image. You can set the output dimensions and format (Auto automatically selects the best format for the browser used, or you can set WEBP, JPEG, PNG or GIF) and add various effects to the static image.
+Simple Image publishes the image with a simple <img> tag. Requires a single high resolution image.
+You can set the output dimensions and format (Auto automatically selects the best format for the browser used,
+you can set WEBP, JPEG, PNG or GIF) and add various effects to the static image.
+
+
 ![Config Image](readme-front-2.png)
 
 The Source Code section allows you to control the appearance of your image or viewer by setting the dimensions and format, as well as adding effects or cropping options.
@@ -23,7 +27,7 @@ You can then add the images to your site using image tags:
 ```html
 <img
   class="card-img-top img-fluid"
-  src="//docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-boFO5uIUKUU-unsplash.jpg&width=283"
+  src="//fsi.domain.tld/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-boFO5uIUKUU-unsplash.jpg&width=283"
   alt=""
   width="283"
 />
@@ -52,7 +56,7 @@ Select OK when you are finished.
 
 The URL created will look like this:
 
-[https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=283&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)](<https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/nathan-oakley-CYfb0qyQ6WM-unsplash.jpg&width=283&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)>)
+[https://fsi.domain.tld/fsi/server?type=image&source=images/samples/sample.jpg&width=283&rect=0.18817,0,0.71387,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)](<https://docs.neptunelabs.com/fsi/server?type=image&source=images/samples/ssi/furniture/furniture-6048139.jpg&width=222&rect=0.02377,0,0.70015,1&renderer=overlay&overlays=images/samples/ssi/overlays/sale-small.png(88,TL,0,0)>)
 
 # Adding static assets
 
@@ -66,7 +70,7 @@ Simply add this URL to your website:
 SVG:
 
 ```html
-<img src="//docs.neptunelabs.com/fsi/static/assets/samples/ssi/logo-furniture-gre.svg" height="24" />
+<img src="//fsi.domain.tld/fsi/static/assets/samples/ssi/logo-furniture-gre.svg" height="24" />
 ```
 
 ## Testing with examples from your own server
