@@ -76,7 +76,7 @@ please refer to the official [documentation][Docs].
 
 [License]: https://github.com/neptunelabs/fsi-image-samples/blob/main/LICENSE
 
-[Docs]: https://docs.neptunelabs.com/fsi-viewer/
+[Docs]: https://docs.neptunelabs.com/
 
 [Server]: https://www.neptunelabs.com/get/
 
