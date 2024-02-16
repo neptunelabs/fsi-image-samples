@@ -9,7 +9,7 @@ overview:
   order: 2
 sample:
   template:
-    schema: framework-2023
+    schema: bootstrap-taupe
     components:
       menu:
         template: data/furniture-menu.yml
@@ -27,9 +27,3 @@ sample:
             link: https://www.neptunelabs.com/dynamic-imaging/
       bootstrap:
         icons: false
-  mapping:
-    html: "index.html"
-    css: "style.css"
-    js: "script.js"
-playground:
-  deploy: true

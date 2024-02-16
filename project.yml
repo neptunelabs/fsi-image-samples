@@ -2,5 +2,6 @@
 title: 'FSI Image'
 projectURL: https://www.neptunelabs.com/dynamic-imaging/
 originAssetPath: image
+schema: overview-taupe
 playground:
   stackblitz: fsi-image-samples
