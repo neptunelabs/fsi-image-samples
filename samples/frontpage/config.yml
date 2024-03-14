@@ -7,29 +7,27 @@ overview:
     - Static Assets
     - Overlays
   order: 1
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: bootstrap-taupe
-    components:
-      menu:
-        template: data/furniture-menu.yml
-      hero:
-        url: /server?type=image&source=images/samples/ssi/furniture/house-6691124.jpg&width=1903&rect=0.01416,0.53388,0.75133,0.21963
-        height: 33vh
-        logo:
-          url: /static/assets/samples/ssi/sale.svg
-          height: 40%
-        title: Black Friday
-        description: Check out our furniture sale.
-        link: SHOP NOW
-      categories: true
-      footer:
-        credits:
-          photos:
-            author: various artists
-            link: https://pixabay.com/
-            platform: Pixabay
-          viewer:
-            link: https://www.neptunelabs.com/dynamic-imaging/
-      bootstrap:
-        icons: false
+  menu:
+    data: furniture-menu.yml
+  hero:
+    url: /server?type=image&source=images/samples/ssi/furniture/house-6691124.jpg&width=1903&rect=0.01416,0.53388,0.75133,0.21963
+    height: 33vh
+    logo:
+      url: /static/assets/samples/ssi/sale.svg
+      height: 40%
+    title: Black Friday
+    description: Check out our furniture sale.
+    link: SHOP NOW
+  categories: true
+  footer:
+    credits:
+      photos:
+        author: various artists
+        link: https://pixabay.com/
+        platform: Pixabay
+      viewer:
+        link: https://www.neptunelabs.com/dynamic-imaging/
+  bootstrap:
+    icons: false
