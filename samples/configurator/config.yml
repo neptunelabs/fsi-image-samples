@@ -7,27 +7,20 @@ overview:
     - Alpha Channels
     - Effect Usage
   order: 5
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: framework-2023
-    components:
-      menu:
-        template: data/clothing-menu.yml
-      featured:
-        template: data/clothing-featured.yml
-      footer:
-        credits:
-          photos:
-            - author: Artem Bondarchuk
-              link: https://unsplash.com/@artembondarchuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-              platform: Unsplash
-          viewer:
-            link: https://www.neptunelabs.com/dynamic-imaging/
-      bootstrap:
-        icons: true
-  mapping:
-    html: 'index.html'
-    css: 'style.css'
-    js: 'script.js'
-playground:
-  deploy: true
+  menu:
+    data: clothing-menu.yml
+  featured:
+    data: clothing-featured.yml
+  footer:
+    credits:
+      photos:
+        - author: Artem Bondarchuk
+          link: https://unsplash.com/@artembondarchuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+          platform: Unsplash
+      viewer:
+        link: https://www.neptunelabs.com/dynamic-imaging/
+  bootstrap:
+    icons: true
+

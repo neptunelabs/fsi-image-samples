@@ -7,29 +7,21 @@ overview:
     - Overlays
     - Crop Effect
   order: 2
+schema: bootstrap-taupe
 sample:
-  template:
-    schema: framework-2023
-    components:
-      menu:
-        template: data/furniture-menu.yml
-      hero:
-        url: /server?type=image&source=images/samples/ssi/furniture/tv-cabinet-6185020.jpg&width=1903&rect=0.08146,0.53855,0.85105,0.21963
-        height: 30vh
-      categories: true
-      footer:
-        credits:
-          photos:
-            author: various artists
-            link: https://pixabay.com/
-            platform: Pixabay
-          viewer:
-            link: https://www.neptunelabs.com/dynamic-imaging/
-      bootstrap:
-        icons: false
-  mapping:
-    html: "index.html"
-    css: "style.css"
-    js: "script.js"
-playground:
-  deploy: true
+  menu:
+    data: furniture-menu.yml
+  hero:
+    url: /server?type=image&source=images/samples/ssi/furniture/tv-cabinet-6185020.jpg&width=1903&rect=0.08146,0.53855,0.85105,0.21963
+    height: 30vh
+  categories: true
+  footer:
+    credits:
+      photos:
+        author: various artists
+        link: https://pixabay.com/
+        platform: Pixabay
+      viewer:
+        link: https://www.neptunelabs.com/dynamic-imaging/
+  bootstrap:
+    icons: false
