@@ -1,9 +1,15 @@
-# [FSI Image](https://www.neptunelabs.com/dynamic-imaging/) &middot; [Samples][GHPages]
+# Auto-generated Responsive Image Samples
 
 | ***Pixel-perfect*** | ***High-DPI-ready*** | ***Fast :rocket:*** | ***Hackable*** | ***Consistent*** |
 |:-------------------:|:--------------------:|:-------------------:|:--------------:|:----------------:|
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)][License]
+
+---
+
+* [Live Samples @ GitHub Pages 🔗][GHPages]
+* [Auto-generated Responsive Images - Product Page 🔗](https://www.neptunelabs.com/dynamic-imaging/)
+* [Documentation 🔗][Docs]
 
 Dynamic Single Source Imaging with FSI Server lets you change your images at any size, at any time - simply by changing
 the URL. All you need is a high-resolution image - FSI Server creates the desired image sizes, cropping and effects in
