@@ -11,9 +11,9 @@
 * [Auto-generated Responsive Images - Product Page 🔗](https://www.neptunelabs.com/dynamic-imaging/)
 * [Documentation 🔗][Docs]
 
-Dynamic Single Source Imaging with FSI Server lets you change your images at any size, at any time - simply by changing
+Auto-generated Responsive Imaging with FSI Server lets you change your images at any size, at any time - simply by changing
 the URL. All you need is a high-resolution image - FSI Server creates the desired image sizes, cropping and effects in
-an instant. Dynamic Single Source Imaging can be applied to any image on the site.
+an instant. Responsive Imaging can be applied to any image on the site.
 
 This repository contains examples on how to use and build your own applications.
 
